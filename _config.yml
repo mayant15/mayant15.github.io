@@ -1,20 +1,14 @@
-#
-###################################
-# Site wide configuration
-####################################
-#
-title: Leonids
-email:
+title: "Blog | Mayant Mukul"
+email: "mayantmukul@hotmail.com"
 description: A simple and awesome blog theme powered by jekyll.
 url: # the base hostname & protocol for your site
 keywords: ["blog", "jekyll"]
 
-#
-###################################
+
 # Jekyll configuration
 ####################################
-#
-timezone:          Europe/Paris
+
+timezone:          Asia/Kolkata
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
@@ -27,15 +21,14 @@ kramdown:
   toc_levels: 1..6
   enable_coderay: false
 
-#
-###################################
+
 # Site Owner configuration
 ####################################
-#
+
 owner:
-  name: Leonids
+  name: "Mayant Mukul"
   avatar: leonids-logo.png
-  job: "A jekyll theme"
+  job: "Mathematics Undergraduate"
   bio: "A simple and awesome blog theme powered by jekyll."
   email:
   disqus-shortname:
@@ -48,8 +41,8 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-  github: #username
-  gitlab: #username
+  github: mayant15
+  gitlab: mayant15
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
   linkedin: #username
   skype: #username
