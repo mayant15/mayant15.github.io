@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Estimating Probability Densities
-excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
+title: Parametric Estimation of Gaussian Mixture Densities
+excerpt: "Go take that data and fit some tasty models on it~"
 modified: 2020-02-15
-tags: [data-science, r, tutorial]
+tags: [data-science, tutorial]
 categories: [tutorial]
 comments: true
-pinned: true
 ---
 
 ssdfsdfsdsdfsd
