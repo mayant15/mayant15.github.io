@@ -1,57 +1,82 @@
+{% if page.title %}
+  {% capture title %}{{ page.title }} | {{ site.title }}{% endcapture %}
+{% else %}
+  {% capture title %}{{ site.title }}{% endcapture %}
+{% endif %}
+
+{% if page.excerpt %}
+  {% capture description %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% endcapture %}
+{% else %}
+  {% capture description %}{{ site.description }}{% endcapture %}
+{% endif %}
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-  <!--[if lte IE 8]><script src="{{ "/js/ie/html5shiv.js" | prepend: site.baseurl }}"></script><![endif]-->
-  <link rel="shortcut icon" href="{{ "/images/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon" />
-  <link rel="icon" href="{{ "/images/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon" />
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
-  <!--[if lte IE 8]><link rel="stylesheet" href="{{ "/css/ie8.css" | prepend: site.baseurl }}" /><![endif]-->
-  <!--[if lte IE 9]><link rel="stylesheet" href="{{ "/css/ie9.css" | prepend: site.baseurl }}" /><![endif]-->{%
-  if page.background-image %}{%
-    assign first_char = page.background-image | slice: 0 %}{%
-    if first_char == '/' %}{%
-      assign second_char = page.background-image | slice: 1 %}{%
-      if second_char == '/' %}{% comment %}                     // remote                 {% endcomment %}{%
-        assign imageurl = page.background-image %}{%
-      else %}{% comment %}                                      // local, not in /images/ {% endcomment %}{%
-        assign imageurl = page.background-image | prepend: site.baseurl %}{%
-      endif %}{%
-    else %}{% comment %}                                        // local, in /images/     {% endcomment %}{%
-      assign imageurl = page.background-image | prepend: "/images/" | prepend: site.baseurl %}{%
-    endif %}
-  <style>
-  #main > header {
-    background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("{{ imageurl }}");
-    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("{{ imageurl }}");
-    background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("{{ imageurl }}");
-    background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("{{ imageurl }}");
-  }
-  </style>
-  <!--[if lte IE 9]>
-  <style>
-  #main > header {
-    background-image: url("{{ imageurl }}");
-  }
-  </style>
-  -->{%
-  endif %}{%
-  if page.style-includes %}{%
-    for include in page.style-includes %}{%
-      assign test1 = include | slice: 0,2 %}{%
-      if test1 == "//" %}
-  <link rel="stylesheet" href="{{ include }}" />{%
-      else %}
-  <link rel="stylesheet" href="{{ include | prepend: site.baseurl }}" />{%
-      endif %}{%
-    endfor %}{%
-  endif %}{%
-  if page.style %}
-<style>
-{{ page.style }}
-</style>{%
-  endif %}
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="{{ description }}">
+  <meta name="keywords" content="{{ site.keywords | array_to_sentence_string }}">
+  <meta name="author" content="{{ title | escape }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f5f5">
+
+  <!-- Twitter Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ title | escape }}">
+  <meta name="twitter:description" content="{{ description | escape }}">
+  {% if page.image.feature %}
+    <meta property="twitter:image" content="{{ site.url }}/img/{{ page.image.feature }}">
+  {% else %}
+    <meta property="twitter:image" content="{{ site.url }}/img/leonids-logo.png">
+  {% endif %}
+
+  <!-- Open Graph Tags -->
+  <meta property="og:type" content="blog">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:title" content="{{ title | escape }}">
+  <meta property="og:description" content="{{ description | escape }}">
+  {% if page.image.feature %}
+    <meta property="og:image" content="{{ site.url }}/img/{{ page.image.feature }}">
+  {% else %}
+    <meta property="og:image" content="{{ site.url }}/img/leonids-logo.png">
+  {% endif %}
+  <title>{{ title }}</title>
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="{{ site.url }}/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ site.url }}/css/main.css">
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | prepend: site.url }}" />
+
+  <!-- Icons -->
+  <!-- 16x16 -->
+  <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+  <!-- 32x32 -->
+  <link rel="shortcut icon" href="{{ site.url }}/favicon.png">
+
+  <!-- MathJax -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'] ],
+        displayMath: [ ['$$', '$$']],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      },
+      messageStyle: "none",
+      "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
+    });
+  </script>
+
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+
+  <!-- Load jQuery -->
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <!-- Load KaTeX -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+  
 </head>
