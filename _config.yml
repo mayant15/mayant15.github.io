@@ -1,6 +1,6 @@
 title: "Blog | Mayant Mukul"
 email: "mayantmukul@hotmail.com"
-description: A simple and awesome blog theme powered by jekyll.
+description: A simple blog for me to record my activities.
 url: # the base hostname & protocol for your site
 keywords: ["blog", "jekyll"]
 
@@ -28,10 +28,10 @@ kramdown:
 
 owner:
   name: "Mayant Mukul"
-  avatar: leonids-logo.png
+  avatar: jungfrau.jpg
   job: "Mathematics Undergraduate"
-  bio: "A simple and awesome blog theme powered by jekyll."
-  email:
+  bio: ""
+  email: "mayantmukul@hotmail.com"
   disqus-shortname:
   twitter: #username
   facebook: #username
@@ -43,9 +43,9 @@ owner:
     ad-slot:
   bing-verify:
   github: mayant15
-  gitlab: mayant15
+  gitlab: #username
   stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
+  linkedin: mayant-mukul-222086172
   skype: #username
   xing: #username
   instagram: #username
