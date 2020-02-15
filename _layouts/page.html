@@ -1,8 +1,21 @@
 ---
 layout: default
 ---
-  <section class="wrapper{% if page.options contains 'minihead' %} minihead{% endif %} style5">
-    <div class="inner{% if page.options contains 'fullwidth' %} fullwidth{% endif %}">
+
+  <div id="page">
+    <header class="page-header">
+      <h2>{{ page.title }}</h2>
+    </header>
+
+    <article class="page-content">
       {{ content }}
-    </div>
-  </section>
+    </article>
+
+
+  </div><!-- end page content -->
+
+
+  {% if site.owner.disqus-shortname and page.comments == true %}
+  <div id="disqus_thread"></div>
+  {% include disqus.html %}
+  {% endif %}

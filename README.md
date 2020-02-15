@@ -1,48 +1,71 @@
-# Personal Website
+# Update 07/09/2018
 
-My personal web site, using a derivative of the Spectral theme by [arkandriver](https://github.com/arkadianriver/arkadianriver.com).
-Spectral originally created by [@ajlkn](http://twitter.com/ajlkn).
+I'm planning to refactor Leonids theme!!!
 
-## To use for your own site
+The goal is really simple: make documentation more intuitive and deployment simpler!!!
 
-1. Personalize the information in the YAML files.
+Here is the plan:
 
-   File | Action
-   -----|-------
-   **`_config.yml`** | Replace the values for each key with your info.
-   **`_data/tokens.yml`** | Create this file, using `_data/tokens-template.yml` as an example.
-   **`_data/authors.yml`** | Add author info for yourself as the first entry in the file.
+| Version | Description | Date |
+| --- | --- | --- |
+| 1.1 | Jekyll version deployable with gem | 07/15/2018 |
+| 1.2 | New features: Pagination, Prev/Next post | 07/22/2018 |
+| 2.0 | Gatsby or Vuepress version (vote in Issues) | who knows... |
 
-1. Personalize the images with your own, and change the attribution for your new banner
-   at the bottom of `_data/credits.yml`.
+As the project was and will be designed to improve your writing experience, only documentation, gem, deployment process with CI relevant PRs are acceptable in the future.
 
-   Image | Description
-   ------|------------
-   **`banner.jpg`** | The main large image on the front page
-   **`pic01.jpg`** | The topics image
-   **`pic02.jpg`** | The works image
+I want you to know how much I value your support.
 
-1. From the repo's root directory, start Jekyll to preview as you write.
-   
-   ```
-   bundle exec jekyll serve --future --drafts
-   ```
-      
-1. Open a browser to http://localhost:4000 (or the port number that jekyll indicates to open).
+Share it to your timeline!
 
-1. Compose your first post!
+# Update 05/06/2016
 
-   ```
-   ruby compose.rb
-   ```
+Important! It's better to download the gzipped files instead of forking the repo. I would really appreciate if you could give me a star. 😁
 
-   The User Guide describes some features that might be useful: http://localhost:4000/topics/user-guide/
+This project is under MIT license, so feel free to make it your own.
 
-1. Test and publish your site:
+# Leonids Jekyll Themes
 
-   If you're building your site on Windows (like me) you can use the `site.bat` file;
-   otherwise, just use the Jekyll commands.
+**[Leonids](http://renyuanz.github.io/leonids)** is a clean Jekyll theme perfect for powering your GitHub hosted blog.
 
-## License
-MIT
+## What is Leonids?
 
+* Responsive templates. Looking good on mobile, tablet, and desktop.
+* Simple and clear permalink structure.
+* Support for Disqus Comments.
+* Support for multi-authors.
+* **And** the Leonids (/ˈliːənɪdz/ lee-ə-nidz) are a prolific meteor shower associated with the comet [Tempel-Tuttle](https://en.wikipedia.org/wiki/55P/Tempel%E2%80%93Tuttle).
+
+See a [demo](http://renyuanz.github.io/leonids/) hosted on GitHub.
+
+## Quick setup
+
+```
+git clone https://github.com/renyuanz/leonids
+cd leonids
+jekyll server
+```
+
+Check out your awesome blog at `http://localhost:4000` and Cheers!
+
+## Running with Docker
+
+```
+docker run --rm -it --volume=$PWD:/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll serve --watch --force_polling
+```
+
+## Resume Page by [@Skn0tt](https://github.com/Skn0tt)
+Leonids features a simple resume page. It is divided up into five sections:
+
+* Bio (Edit \_data/index/careers.yml)
+* Education (Edit \_data/index/education.yml)
+* Skills (Edit \_data/index/skills.yml)
+* Projects (Edit \_data/index/projects.yml)
+* About (Edit \_includes/sections/about.html)
+
+You can put all your info into these files, and they will be featured on the resume page.
+
+## TODO
+
+- [ ] Redesign categories page. Ref: [dribbble: blog category section By Ilja Miskov](https://dribbble.com/shots/2274792-Blog-Category-Selection)
+- [ ] Multi languages support.
