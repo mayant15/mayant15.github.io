@@ -13,3 +13,18 @@
       .catch(err => console.log('Service Worker failed to register 😔', err));
   }
 </script>
+
+<script>
+  console.log("Running Katex jQuery script.");
+
+  $("script[type='math/tex']").replaceWith(function() {
+      var tex = $(this).text();
+      return katex.renderToString(tex, {displayMode: false});
+  });
+
+  $("script[type='math/tex; mode=display']").replaceWith(function() {
+      var tex = $(this).html();
+      console.log(tex);
+      return katex.renderToString(tex, {displayMode: true});
+  });
+</script>

@@ -8,6 +8,7 @@ logo:           /assets/icons/favicon-192x192.png
 image:          /assets/images/me.jpg
 url:            https://mayant15.github.io
 repository:     mayant15/mayant15.github.io
+lang: en_GB
 
 # Author Informations
 author:
@@ -109,3 +110,6 @@ compress_html:
   startings: [body]
   profile: false
   blanklines: false
+
+kramdown:
+   math_engine: mathjax
