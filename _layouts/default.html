@@ -1,34 +1,37 @@
-<!DOCTYPE html>
-{% include topcomment.html %}
-<html lang="{{ site.lang }}">
+---
+layout: compress
+---
+
+<!doctype html>
+<html dir="ltr" lang="pt-br">
 
   {% include head.html %}
 
-  <body>
+  <body class="website">
 
-    <!-- Page Wrapper -->
-    <div id="page-wrapper">
-
+    {% unless page.layout_options.hide_header %}
       {% include header.html %}
+    {% endunless %}
 
-      <article{%
-        if page.background-image %} id="main"{%
-        elsif page.options contains 'minihead' %} id="minihead"{%
-        else %} id="standard"{%
-        endif %}>
+    <main class="wrapper">
+      {{ content }}
+    </main>
 
-        {% include header-inner.html %}
-
-        {{ content }}
-
-      </article>
-
+    {% unless page.layout_options.hide_footer %}
       {% include footer.html %}
+    {% endunless %}
 
-      {% include scripts.html %}
+    {% include scripts.html %}
 
-    </div>
-
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id={{ site.conf.gtm_id }}"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden">
+      </iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
   </body>
-
 </html>

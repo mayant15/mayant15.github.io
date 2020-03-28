@@ -1,0 +1,39 @@
+---
+title: Home
+layout: page
+homepage: true
+image:
+  src: /assets/images/location/fulfillment.jpg
+  width: 1600
+  height: 1289
+layout_options:
+  hide_page_title: true
+  class: homepage
+---
+
+<section class="homepage__intro">
+  <h5>Curious mind, developer and writer.</h5>
+  <h1 class="homepage__title">Hi there, I'm Mayant<span>.</span></h1>
+
+  <p class="homepage__description">
+    A mathematics undergraduate and aspiring video game developer spending the majority of my time learning about new tech.
+    <br><br>
+    Here I write about programming, gaming, and math.
+  </p>
+
+  <p class="homepage__links">
+    <a href="{{ site.social.facebook }}" class="alarming">Facebook</a> | 
+    <a href="{{ site.social.github }}" class="alarming">GitHub</a> | 
+    <a href="{{ site.social.linkedin }}" class="alarming">LinkedIn</a>
+  </p>
+</section>
+
+<section class="homepage__intro">
+  <h4 class="title-hero">Recent Articles</h4>
+
+  {% include page/post-list.html limit=5 collection=site.posts %}
+
+  <div class="text-center">
+    <a href="/articles" class="btn">View all posts</a>
+  </div>
+</section>

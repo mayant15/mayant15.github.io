@@ -1,26 +1,41 @@
-<!-- Header -->
-<header id="header"{% if page.layout == 'landing' %} class="alt"{% endif %}>
-  <h1><a href="{{ site.baseurl }}/index.html">{{ site.title }}</a></h1>
-  <!-- <nav id="nav">
-    <ul>
-      <li class="special">
-        <a href="#menu" class="menuToggle"><span>Menu</span></a>
-        <div id="menu">
-          <ul>
-            <li><a href="{{ "/index.html#greeting" | prepend: site.baseurl }}">Home</a></li>{%
-            assign sorted_pages = site.pages | sort: 'key','last' %}{%
-            for my_page in sorted_pages %}{%
-              if my_page.title %}{%
-                unless my_page.options contains 'nomenu' %}
-            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>{%
-                endunless %}{%
-              endif %}{%
-            endfor %}
-            <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}"
-                   class="icon fa-feed"> RSS Feed</a></li>
-          </ul>
-        </div>
+{% assign title = page.title %}
+
+{% capture header_class %}
+  {% if page.layout_options.hero %}header--floating{% endif %}
+{% endcapture %}
+
+<header class="header {{ header_class | strip }}">
+  <a href="/" class="logo">
+    <img src="/assets/icons/M.png" width="36px" alt="{{site.title}}">
+  </a>
+
+  <nav class="main-nav">
+    <ul class="main-nav__list">
+    {% for item in site.navigation %}
+
+      {% capture is_active %}
+        {% if title == item.text or page.url contains item.active
+          or page.homepage == true and item.text contains 'Home'  %}
+          main-nav__link--active
+        {% endif %}
+      {% endcapture %}
+
+      <li class="main-nav__list-item">
+        <a href="{{ item.url }}" class="main-nav__link {{ is_active | strip }}">
+          {{ item.text }}
+        </a>
       </li>
+    {% endfor %}
     </ul>
-  </nav> -->
+  </nav>
+
+  <a href="https://github.com/{{site.author.github}}" class="github" title="GitHub">
+      {% include icons/github.svg %}
+  </a>
+
+  <!-- <div class="menu-button">
+    <span class="menu-button__line"></span>
+    <span class="menu-button__line"></span>
+    <span class="menu-button__line"></span>
+  </div> -->
 </header>

@@ -1,0 +1,36 @@
+{
+  "name": "rafaell-lycan.com",
+  "private": true,
+  "version": "3.0.0",
+  "description": "Rafaell Lycan's website",
+  "author": "Rafaell Lycan <sonny.webdsg@gmail.com>",
+  "scripts": {
+    "start": "yarn dev",
+    "clean": "rimraf _site",
+    "predev": "yarn clean",
+    "dev": "concurrently \"yarn webpack:dev\" \"yarn jekyll:dev\"",
+    "postdev": "export NODE_ENV=development",
+    "prebuild": "yarn clean",
+    "build": "yarn webpack && yarn jekyll",
+    "postbuild": "export NODE_ENV=production",
+    "jekyll": "bundle exec jekyll build",
+    "jekyll:dev": "bundle exec jekyll serve jekyll serve --config _config.yml,_config_dev.yml --incremental",
+    "webpack": "webpack --progress --config webpack.config.js",
+    "webpack:dev": "webpack --progress --config webpack.config.js --colors --watch"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "compression-webpack-plugin": "^1.1.11",
+    "concurrently": "^3.5.0",
+    "rimraf": "^2.6.1",
+    "sw-precache-webpack-plugin": "^0.11.4",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.5.5"
+  },
+  "dependencies": {
+    "webfontloader": "^1.6.28"
+  }
+}

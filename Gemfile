@@ -1,3 +1,11 @@
 source 'https://rubygems.org'
-gem 'jekyll', '>= 3.1.2'
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+ruby RUBY_VERSION
+
+gem 'jekyll'
+gem 'liquid-c'
+
+group :jekyll_plugins do
+  gem 'github-pages'
+  gem 'jekyll-include-cache'
+  gem 'jekyll-livereload'
+end

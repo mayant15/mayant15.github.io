@@ -1,48 +1,14 @@
-# Personal Website
+# Blog.
 
-My personal web site, using a derivative of the Spectral theme by [arkandriver](https://github.com/arkadianriver/arkadianriver.com).
-Spectral originally created by [@ajlkn](http://twitter.com/ajlkn).
+This is my personal website. Powered by [Jekyll](https://jekyllrb.com/). Adapted from Rafaell Lycan's [website](https://rafaell-lycan.com/)
 
-## To use for your own site
+[![Build Status](https://travis-ci.org/rafaell-lycan/rafaell-lycan.com.svg?branch=master)](https://travis-ci.org/mayant15/mayant15.github.io)
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/mayant15/mayant15.github.io/blob/master/LICENSE)
 
-1. Personalize the information in the YAML files.
+## Todo
 
-   File | Action
-   -----|-------
-   **`_config.yml`** | Replace the values for each key with your info.
-   **`_data/tokens.yml`** | Create this file, using `_data/tokens-template.yml` as an example.
-   **`_data/authors.yml`** | Add author info for yourself as the first entry in the file.
-
-1. Personalize the images with your own, and change the attribution for your new banner
-   at the bottom of `_data/credits.yml`.
-
-   Image | Description
-   ------|------------
-   **`banner.jpg`** | The main large image on the front page
-   **`pic01.jpg`** | The topics image
-   **`pic02.jpg`** | The works image
-
-1. From the repo's root directory, start Jekyll to preview as you write.
-   
-   ```
-   bundle exec jekyll serve --future --drafts
-   ```
-      
-1. Open a browser to http://localhost:4000 (or the port number that jekyll indicates to open).
-
-1. Compose your first post!
-
-   ```
-   ruby compose.rb
-   ```
-
-   The User Guide describes some features that might be useful: http://localhost:4000/topics/user-guide/
-
-1. Test and publish your site:
-
-   If you're building your site on Windows (like me) you can use the `site.bat` file;
-   otherwise, just use the Jekyll commands.
-
-## License
-MIT
+- Uncomment the _base.sass include to enable a background
+- The top navbar thing has a extra space after each word that is affecting underlines i.e. "Home " instead of just "Home"
+- Fix the “ and ” for blockquotes
+- Fix social links under posts
 
