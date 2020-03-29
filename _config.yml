@@ -10,6 +10,19 @@ url:            https://mayant15.github.io
 repository:     mayant15/mayant15.github.io
 lang: en_GB
 
+# Travis
+safe: false
+lsi: false
+pygments: true
+
+relative_source: ../mayant15.github.io/
+destination: ../blog-dest/
+
+# Settings for deploy rake task
+username: mayant15
+repo: mayant15.github.io
+branch: develop
+
 # Author Informations
 author:
   name:         Mayant Mukul
@@ -102,6 +115,9 @@ exclude:
   - gulpfile.js
   - webpack.config.js
   - README.md
+  - Rakefile
+  - "*.Rmd"
+  - .travis.yml
 
 compress_html:
   clippings: all
