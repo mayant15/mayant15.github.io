@@ -1,9 +1,9 @@
 {
-  "name": "rafaell-lycan.com",
+  "name": "mayant15.github.io",
   "private": true,
   "version": "3.0.0",
-  "description": "Rafaell Lycan's website",
-  "author": "Rafaell Lycan <sonny.webdsg@gmail.com>",
+  "description": "Mayant Mukul's website",
+  "author": "Mayant Mukul <mayantmukul@hotmail.com>",
   "scripts": {
     "start": "yarn dev",
     "clean": "rimraf _site",

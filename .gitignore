@@ -3,6 +3,6 @@ _site
 .sass-cache
 .jekyll-metadata
 package-lock.json
-npm-debug.log
+*.log
 node_modules
 assets/scripts/*
