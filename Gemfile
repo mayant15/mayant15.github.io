@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 ruby RUBY_VERSION
 
-gem 'jekyll'
+gem 'jekyll', "~> 4.0.0"
 gem 'liquid-c'
 gem "rake", "~> 10.1.1"
 
 group :jekyll_plugins do
-  gem 'github-pages'
-  gem 'jekyll-include-cache'
-  gem 'jekyll-livereload'
+  gem 'jekyll-paginate'
+  gem 'jekyll-seo-tag'
+  gem 'jekyll-sitemap'
 end

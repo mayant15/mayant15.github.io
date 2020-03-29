@@ -8,7 +8,8 @@
   &__item {
     display: inline;
     padding: 0;
-    margin: 0 rem(20);
+    margin-left: 0;
+    margin-right: rem(20);
 
     @include media(small_only) {
       display: block;

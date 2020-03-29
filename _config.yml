@@ -13,10 +13,8 @@ lang: en_GB
 # Travis
 safe: false
 lsi: false
-pygments: true
 
 relative_source: ../mayant15.github.io/
-destination: ../blog-dest/
 
 # Settings for deploy rake task
 username: mayant15
@@ -86,10 +84,11 @@ kramdown:
 
 sass:
   sass_dir:     _sass
-  style:        :compressed
+  sourcemap:    always
+  line_comments: true
 
 # Output
-permalink:      /:year/:title/
+# permalink:      /:year/:title/
 paginate:       10
 paginate_path:  "/articles/page/:num/"
 future:         false
@@ -97,12 +96,9 @@ show_drafts:    false
 
 # Plugins
 plugins:
-  - jekyll-include-cache
-  - jekyll-pagination
+  - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-github-metadata
-  - jemoji
 
 # Reading
 exclude:

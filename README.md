@@ -11,4 +11,6 @@ This is my personal website. Powered by [Jekyll](https://jekyllrb.com/). Adapted
 - The top navbar thing has a extra space after each word that is affecting underlines i.e. "Home " instead of just "Home"
 - Fix the “ and ” for blockquotes
 - Fix social links under posts
+- Implement syntax highlighting
+- Fix the pagination "next page" li discrepancy between firefox and chrome
 
