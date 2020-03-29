@@ -5,7 +5,7 @@ install:
   # Install Jekyll and dependencies
   - bundle install
 
-script: bundle exec rake site:deploy --quiet --trace
+script: bundle exec rake site:deploy --trace
 
 env:
   global:

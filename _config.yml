@@ -22,6 +22,7 @@ destination: ../blog-dest/
 username: mayant15
 repo: mayant15.github.io
 branch: develop
+email: mayantmukul@hotmail.com
 
 # Author Informations
 author:
