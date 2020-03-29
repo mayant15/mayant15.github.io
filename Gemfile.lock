@@ -8,7 +8,9 @@ GEM
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
+    eventmachine (1.2.7)
     eventmachine (1.2.7-x64-mingw32)
+    ffi (1.12.2)
     ffi (1.12.2-x64-mingw32)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
@@ -51,12 +53,14 @@ GEM
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.3)
-    rake (10.1.1)
+    rake (12.3.3)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rouge (3.17.0)
     safe_yaml (1.0.5)
+    sassc (2.2.1)
+      ffi (~> 1.9)
     sassc (2.2.1-x64-mingw32)
       ffi (~> 1.9)
     terminal-table (1.8.0)
@@ -64,6 +68,7 @@ GEM
     unicode-display_width (1.7.0)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
@@ -72,7 +77,7 @@ DEPENDENCIES
   jekyll-seo-tag
   jekyll-sitemap
   liquid-c
-  rake (~> 10.1.1)
+  rake (~> 12.3.3)
 
 RUBY VERSION
    ruby 2.5.5p157
