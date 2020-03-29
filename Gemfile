@@ -3,6 +3,7 @@ ruby RUBY_VERSION
 
 gem 'jekyll'
 gem 'liquid-c'
+gem "rake", "~> 10.1.1"
 
 group :jekyll_plugins do
   gem 'github-pages'
