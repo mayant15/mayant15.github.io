@@ -220,7 +220,7 @@ namespace :site do
       sh "git add --all ."
       sh "git commit -m 'Updating to #{USERNAME}/#{REPO}@#{sha}.'"
       sh "git remote add origin-pages https://#{ENV["GH_TOKEN"]}@github.com/#{USERNAME}/#{REPO}"
-      sh "git push origin-pages #{DESTINATION_BRANCH}"
+      sh "git push origin-pages #{DESTINATION_BRANCH} --force"
       puts "Pushed updated branch #{DESTINATION_BRANCH} to GitHub Pages"
     end
   end
