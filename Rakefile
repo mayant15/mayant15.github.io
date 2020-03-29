@@ -219,7 +219,8 @@ namespace :site do
     Dir.chdir(CONFIG["destination"]) do
       sh "git add --all ."
       sh "git commit -m 'Updating to #{USERNAME}/#{REPO}@#{sha}.'"
-      sh "git push origin #{DESTINATION_BRANCH}"
+      sh "git remote add origin-pages https://#{ENV["GH_TOKEN"]}@github.com/#{USERNAME}/#{REPO}"
+      sh "git push origin-pages #{DESTINATION_BRANCH}"
       puts "Pushed updated branch #{DESTINATION_BRANCH} to GitHub Pages"
     end
   end
