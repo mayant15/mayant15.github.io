@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "fonts.css",
+	"sources": [
+		"fonts.scss",
+		"_sass/abstracts/_fonts.scss"
+	],
+	"sourcesContent": [
+		"@import \"abstracts/fonts\";",
+		"/*\n* Sofia Pro\n*/\n\n@font-face {\n  font-family: \"Sofia Pro\";\n  src: url('../fonts/Sofia Pro Bold Italic.otf');\n  font-weight: 900;\n  font-style: italic;\n}\n\n@font-face {\n  font-family: \"Sofia Pro\";\n  src: url('../fonts/Sofia Pro Bold.otf');\n  font-weight: 900;\n}\n\n@font-face {\n  font-family: \"Sofia Pro\";\n  src: url('../fonts/Sofia Pro Semi Bold Italic.otf');\n  font-weight: 600;\n  font-style: italic;\n}\n\n@font-face {\n  font-family: \"Sofia Pro\";\n  src: url('../fonts/Sofia Pro Semi Bold.otf');\n  font-weight: 600;\n}\n\n\n@font-face {\n  font-family: \"Sofia Pro\";\n  src: url('../fonts/Sofia Pro Medium Italic.otf');\n  font-weight: 400;\n  font-style: italic;\n}\n\n@font-face {\n  font-family: \"Sofia Pro\";\n  src: url('../fonts/Sofia Pro Medium.otf');\n  font-weight: 400;\n}\n\n@font-face {\n  font-family: \"Sofia Pro\";\n  src: url('../fonts/Sofia Pro Light.otf');\n  font-weight: 300;\n}\n\n@font-face {\n  font-family: \"Sofia Pro\";\n  src: url('../fonts/Sofia Pro Light Italic.otf');\n  font-weight: 300;\n  font-style: italic;\n}"
+	],
+	"names": [],
+	"mappings": "ACAA,eAEE;AAEF,UAAU,GACR,WAAW,EAAE,WAAW,EACxB,GAAG,EAAE,yCAAyC,EAC9C,WAAW,EAAE,GAAG,EAChB,UAAU,EAAE,MAAM;;AAGpB,UAAU,GACR,WAAW,EAAE,WAAW,EACxB,GAAG,EAAE,kCAAkC,EACvC,WAAW,EAAE,GAAG;;AAGlB,UAAU,GACR,WAAW,EAAE,WAAW,EACxB,GAAG,EAAE,8CAA8C,EACnD,WAAW,EAAE,GAAG,EAChB,UAAU,EAAE,MAAM;;AAGpB,UAAU,GACR,WAAW,EAAE,WAAW,EACxB,GAAG,EAAE,uCAAuC,EAC5C,WAAW,EAAE,GAAG;;AAIlB,UAAU,GACR,WAAW,EAAE,WAAW,EACxB,GAAG,EAAE,2CAA2C,EAChD,WAAW,EAAE,GAAG,EAChB,UAAU,EAAE,MAAM;;AAGpB,UAAU,GACR,WAAW,EAAE,WAAW,EACxB,GAAG,EAAE,oCAAoC,EACzC,WAAW,EAAE,GAAG;;AAGlB,UAAU,GACR,WAAW,EAAE,WAAW,EACxB,GAAG,EAAE,mCAAmC,EACxC,WAAW,EAAE,GAAG;;AAGlB,UAAU,GACR,WAAW,EAAE,WAAW,EACxB,GAAG,EAAE,0CAA0C,EAC/C,WAAW,EAAE,GAAG,EAChB,UAAU,EAAE,MAAM"
+}

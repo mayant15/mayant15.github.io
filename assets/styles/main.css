@@ -1,1 +1,433 @@
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1,.h1{font-size:2em;margin:0.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace, monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace, monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}*,*:before,*:after{box-sizing:border-box}body{font:normal 300 1.125em/1.8em "Source Serif Pro",Constantia,"Lucida Bright","Lucida Serif",Lucida,"Liberation Serif",Georgia,serif;letter-spacing:0.01rem;color:#3e3e3e;background:#fff;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}@media only screen and (max-width: 30rem){body{background-image:none}}img{max-width:100%;vertical-align:middle;border-radius:2px}figure{width:100%;margin:0 auto;position:relative;clear:both;outline:0;box-sizing:border-box;user-select:auto;z-index:100}figure>img{display:block;margin:0 auto}figcaption{position:relative;width:100%;left:0;top:0;color:rgba(62,62,62,0.6);outline:0;text-align:center;font-size:14px;margin:10px auto 0}h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,h6{font-family:"Sofia Pro","Helvetica Neue",Helvetica,Arial,sans-serif;line-height:1.2em;font-weight:700}h1 code,.h1 code,h2 code,.h2 code,h3 code,.h3 code,h4 code,.h4 code,h5 code,h6 code{font-size:.8em}h1,.h1{font-size:3rem}h2,.h2{font-size:2.25rem;margin-top:3rem}h3,.h3{font-size:1.875rem}h4,.h4{font-size:1.5rem}@media only screen and (max-width: 768px){h1,.h1{font-size:2.8rem}h2,.h2{font-size:2.2rem}}@media only screen and (max-width: 480px){h1,.h1{font-size:1.75rem}h2,.h2{font-size:1.5rem}h3,.h3{font-size:1.3rem}h4,.h4{font-size:1.125rem}}p{margin:0 0 1.875rem}b,strong{font-weight:bold}blockquote{position:relative;margin:3.75rem 0;padding:0 2.5em;text-align:center;font-style:italic;font-size:1.5rem;line-height:1.5em;color:#7a7a7a}blockquote:after,blockquote:before{position:absolute;font-size:4em;color:rgba(66,153,255,0.6);z-index:-1;font-family:'Droid Serif', georgia, serif}blockquote:after{content:"''";right:0px}blockquote:before{content:"''";left:0px}blockquote>:last-child{margin-bottom:0}hr{box-sizing:content-box;height:0;display:block;border:0;text-align:center;margin-top:50px;margin-bottom:50px}hr:before{content:'...';display:inline-block;margin-left:.6em;color:rgba(62,62,62,0.4);position:relative;top:-30px;font-size:1.8rem;letter-spacing:.6em}@media only screen and (max-width: 768px){hr{margin-top:30px;margin-bottom:30px;font-size:1.25rem;line-height:1.4}}pre,code{font-size:1em;border-radius:2px}code{font-family:"Fira Mono","monaco","Consolas","Lucida Console",monospace;font-size:1rem;letter-spacing:-0.3px;padding:1px 5px;white-space:normal}:not(pre)>code{background:#f0f3f5;border:1px solid #e4e4e4;margin:0 0.05em;padding:1px 5px;white-space:nowrap}pre{background:#f0f3f5;line-height:1.35;overflow-x:auto;margin:1.875rem 0;white-space:pre;word-wrap:normal;box-shadow:0 1px 1px rgba(62,62,62,0.12);-webkit-overflow-scrolling:touch}pre>code{border-radius:2px;color:#3d3e44;display:block;outline:none;overflow-x:auto;padding:1rem;white-space:inherit}.wrapper:after,.container:after,.clearfix:after{content:"";display:table;clear:both}.hidden{visibility:hidden;display:none}.default-list,.post-list,.social-links,.references-box__list{list-style-type:none;margin:0;padding:0}.img-rounded{border-radius:50%}.center{margin-left:auto;margin-right:auto}.text-center{text-align:center !important}.text-light{font-weight:normal}.text-base-color{color:#4299ff}a{color:#3e3e3e;border-bottom:1px solid #4299ff;text-decoration:none;transition:all 300ms ease-in-out}a:active,a:hover{color:#0f7dff;border-color:#0f7dff;outline:0}.website{display:flex;min-height:100vh;flex-direction:column}.wrapper{flex:1;padding-top:7.5rem;padding-bottom:3.75rem}@media only screen and (min-width: 48rem){.wrapper{padding-top:9.375rem;padding-bottom:5.625rem}}@media only screen and (min-width: 60rem){.wrapper{padding-top:11.25rem}}@media only screen and (min-width: 75rem){.wrapper{padding-top:13.125rem}}.container{position:relative;display:block;width:45rem;max-width:100%;margin-right:auto;margin-left:auto;padding-right:1rem;padding-left:1rem}.title-hero{margin:5.625rem 0 1.875rem;color:#4299ff;text-transform:uppercase;font-size:13px;position:relative}.title-hero:after{content:'';display:block;height:2px;width:3.125rem;margin:1.25rem 0 0;background:#4299ff}.animate{animation:fade-in-down 600ms;animation-delay:200ms}@-webkit-keyframes fade-in-down{0%{opacity:0;transform:translateY(-10px)}100%{opacity:1;transform:translateY(0)}}@-moz-keyframes fade-in-down{0%{opacity:0;transform:translateY(-10px)}100%{opacity:1;transform:translateY(0)}}@-ms-keyframes fade-in-down{0%{opacity:0;transform:translateY(-10px)}100%{opacity:1;transform:translateY(0)}}@-o-keyframes fade-in-down{0%{opacity:0;transform:translateY(-10px)}100%{opacity:1;transform:translateY(0)}}@keyframes fade-in-down{0%{opacity:0;transform:translateY(-10px)}100%{opacity:1;transform:translateY(0)}}@-webkit-keyframes fade{0%{opacity:0}60%{opacity:0}100%{opacity:1}}@-moz-keyframes fade{0%{opacity:0}60%{opacity:0}100%{opacity:1}}@-ms-keyframes fade{0%{opacity:0}60%{opacity:0}100%{opacity:1}}@-o-keyframes fade{0%{opacity:0}60%{opacity:0}100%{opacity:1}}@keyframes fade{0%{opacity:0}60%{opacity:0}100%{opacity:1}}table{width:100%;margin:30px 0;border-collapse:collapse;border-spacing:0}th,td{text-align:left;padding-right:15px;vertical-align:top}table td,td{border-spacing:none;border-style:solid;padding:10px 15px;border-width:1px 0 0 0}tr>td{border-top:1px solid #e2e2e2}tr:nth-child(odd)>td{background:#f0f3f5}thead th,th{text-align:left;padding:15px;font-weight:bold;border-bottom:1px solid #4299ff;cursor:default;white-space:nowrap}.btn{-webkit-appearance:none;display:inline-block;vertical-align:middle;border-bottom:1px solid #3e3e3e;cursor:pointer;margin:0;padding-bottom:1.25rem;color:#3e3e3e;font:700 13px "Sofia Pro","Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:3.5px;transition:all 300ms;text-align:center;text-decoration:none;text-transform:uppercase;user-select:none;white-space:normal}.btn:hover,.btn:active{color:#4299ff;border-color:#4299ff}.post-list{margin:3.125rem 0;animation:fade 600ms ease}.post-list__item{display:block;padding:1.25rem 0;border-bottom:1px solid #e2e2e2}.post-list__item:first-child{padding-top:0}.post-list__item:last-child{border:0;padding-bottom:0}.post-list__title{margin:.9375rem 0}.post-list__link{display:block;color:#333;border:0;transition:color 300ms ease-in-out}.post-list__link:hover,.post-list__link:active{color:#4299ff}.post-list__description{margin-bottom:.9375rem}.post-list__meta{font-size:1rem;text-transform:uppercase}.post-list__meta span{margin-left:.9375rem}.post-list__meta span:before{content:'|';margin-right:.9375rem}.post-list__meta--center{text-align:center}.meta-tags{font-size:.8125rem;font-family:"Sofia Pro","Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;margin:0;padding:0}.meta-tags--center{text-align:center}.meta-tags__item{display:inline-block}.meta-tags__item:after{content:",";display:inline-block;margin-left:-.0625rem;margin-right:.3125rem}.meta-tags__item:last-child:after{display:none}.meta-tags a{color:#4299ff;border:none;font-weight:600}.info-box{font-family:"Sofia Pro","Helvetica Neue",Helvetica,Arial,sans-serif;padding:.9375rem;margin:1.875rem 0;background-color:rgba(247,232,79,0.25);border-left:.5rem solid rgba(247,232,79,0.6)}.info-box.warning{background-color:rgba(218,57,63,0.25);border-color:rgba(218,57,63,0.6)}.info-box.success{background-color:rgba(69,197,95,0.25);border-color:rgba(69,197,95,0.6)}.info-box.info{background-color:rgba(66,153,255,0.25);border-color:rgba(66,153,255,0.6)}.social-links{text-align:center;padding-bottom:3.125rem;list-style-type:none}.social-links li{margin:10;display:inline-block}.social-links a{border:none;border-bottom:none}.social-links svg{width:1.25rem;fill:rgba(122,122,122,0.6);transition:all 300ms ease}.social-links a:hover svg{fill:#0f7dff}.references-box{padding-bottom:3.125rem}.references-box__list{padding:1.25rem;border:3px solid #4299ff}.references-box li{font-size:.875rem;margin:.3125rem 0 .3125rem .625rem}.references-box li:before{content:"→";color:#4299ff}.references-box .comment{color:#7a7a7a;font-family:"Fira Mono","monaco","Consolas","Lucida Console",monospace;padding-left:4px}.survey{padding:.625rem 1.875rem 3.125rem;margin:3.125rem 0;background:#45c55f;font-family:"Sofia Pro","Helvetica Neue",Helvetica,Arial,sans-serif;color:#fff}.survey h4,.survey .h4{text-transform:uppercase}.survey a{color:#fff;border-color:#fff}.survey a:hover{color:#3e3e3e;border-color:#3e3e3e}.toc{font-family:"Sofia Pro","Helvetica Neue",Helvetica,Arial,sans-serif;background:#f7f8fb;padding:0 .9375rem;margin:1.875rem 0;border-radius:.1875rem;border:1px solid #e6e9f3}@media only screen and (min-width: 48rem){.toc{padding:0 1.875rem}}.toc .title-hero{color:#3e3e3e;margin-top:0}.toc p{margin:0}.toc ul{list-style:none;padding-left:.625rem;font-size:1rem}.toc li{position:relative;padding:4px 15px}.toc li:before{position:absolute;top:5px;left:-14px;content:'';background-image:url("/assets/svgs/link.svg");background-position:0 0;background-repeat:no-repeat;background-size:contain;opacity:.3;width:22px;height:22px}.toc a{color:#3f4754;transition:all .2s ease;border:none}.toc a:hover{color:#78859a}.pagination{padding:0;margin:0;width:100%;text-align:center;list-style:none}.pagination__item{display:inline;padding:0;margin:0 1.25rem}@media only screen and (max-width: 30rem){.pagination__item{display:block}}@media only screen and (min-width: 48rem){.pagination__item{margin:0 40px}}.pagination__item:first-child{margin:0}.highlight table td{padding:5px}.highlight table pre{margin:0}.highlight .cm{color:#999988;font-style:italic}.highlight .cp{color:#999999;font-weight:bold}.highlight .c1{color:#999988;font-style:italic}.highlight .cs{color:#999999;font-weight:bold;font-style:italic}.highlight .c,.highlight .cd{color:#999988;font-style:italic}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .gd{color:#000000;background-color:#fdd}.highlight .ge{color:#000000;font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000000;background-color:#dfd}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:bold}.highlight .gu{color:#aaa}.highlight .gt{color:#a00}.highlight .kc{color:#000000;font-weight:bold}.highlight .kd{color:#000000;font-weight:bold}.highlight .kn{color:#000000;font-weight:bold}.highlight .kp{color:#000000;font-weight:bold}.highlight .kr{color:#000000;font-weight:bold}.highlight .kt{color:#445588;font-weight:bold}.highlight .k,.highlight .kv{color:#000000;font-weight:bold}.highlight .mf{color:#099}.highlight .mh{color:#099}.highlight .il{color:#099}.highlight .mi{color:#099}.highlight .mo{color:#099}.highlight .m,.highlight .mb,.highlight .mx{color:#099}.highlight .sb{color:#d14}.highlight .sc{color:#d14}.highlight .sd{color:#d14}.highlight .s2{color:#d14}.highlight .se{color:#d14}.highlight .sh{color:#d14}.highlight .si{color:#d14}.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .s{color:#d14}.highlight .na{color:teal}.highlight .bp{color:#999}.highlight .nb{color:#0086B3}.highlight .nc{color:#445588;font-weight:bold}.highlight .no{color:teal}.highlight .nd{color:#3c5d5d;font-weight:bold}.highlight .ni{color:purple}.highlight .ne{color:#990000;font-weight:bold}.highlight .nf{color:#990000;font-weight:bold}.highlight .nl{color:#990000;font-weight:bold}.highlight .nn{color:#555}.highlight .nt{color:navy}.highlight .vc{color:teal}.highlight .vg{color:teal}.highlight .vi{color:teal}.highlight .nv{color:teal}.highlight .ow{color:#000000;font-weight:bold}.highlight .o{color:#000000;font-weight:bold}.highlight .w{color:#bbb}twitterwidget{margin:0 auto}.iframe-wrap{position:relative;height:0;padding-top:1.875rem;padding-bottom:56.25%;margin-bottom:1.875rem;overflow:hidden;border:none;border-radius:2px;box-shadow:0px 0px 1px 0px rgba(0,0,0,0.6),0px 2px 10px rgba(0,0,0,0.12)}.iframe-wrap>iframe{border:none;border-radius:2px;height:100%;left:0;position:absolute;top:0;width:100%}
+@charset "UTF-8";
+/** Variables */
+/** Colors */
+/* It returns the current percent of a context on a reference using pixels Thanks Ethan Marcotte */
+/* It returns flexible value using 'target / context' formula. Returns 'rem' as format. */
+/* Breakpoint mixin */
+/* It create the current percent of a context on a reference using pixels Thanks Ethan Marcotte */
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document ========================================================================== */
+/** 1. Change the default font family in all browsers (opinionated). 2. Correct the line height in all browsers. 3. Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+/* line 13, _sass/base/_normalize.scss */ html { font-family: sans-serif; /* 1 */ line-height: 1.15; /* 2 */ -ms-text-size-adjust: 100%; /* 3 */ -webkit-text-size-adjust: 100%; /* 3 */ }
+
+/* Sections ========================================================================== */
+/** Remove the margin in all browsers (opinionated). */
+/* line 27, _sass/base/_normalize.scss */ body { margin: 0; }
+
+/** Add the correct display in IE 9-. */
+/* line 35, _sass/base/_normalize.scss */ article, aside, footer, header, nav, section { display: block; }
+
+/** Correct the font size and margin on `h1` elements within `section` and `article` contexts in Chrome, Firefox, and Safari. */
+/* line 49, _sass/base/_normalize.scss */ h1, .h1 { font-size: 2em; margin: 0.67em 0; }
+
+/* Grouping content ========================================================================== */
+/** Add the correct display in IE 9-. 1. Add the correct display in IE. */
+/* line 62, _sass/base/_normalize.scss */ figcaption, figure, main { /* 1 */ display: block; }
+
+/** Add the correct margin in IE 8. */
+/* line 72, _sass/base/_normalize.scss */ figure { margin: 1em 40px; }
+
+/** 1. Add the correct box sizing in Firefox. 2. Show the overflow in Edge and IE. */
+/* line 81, _sass/base/_normalize.scss */ hr { box-sizing: content-box; /* 1 */ height: 0; /* 1 */ overflow: visible; /* 2 */ }
+
+/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
+/* line 92, _sass/base/_normalize.scss */ pre { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/* Text-level semantics ========================================================================== */
+/** 1. Remove the gray background on active links in IE 10. 2. Remove gaps in links underline in iOS 8+ and Safari 8+. */
+/* line 105, _sass/base/_normalize.scss */ a { background-color: transparent; /* 1 */ -webkit-text-decoration-skip: objects; /* 2 */ }
+
+/** Remove the outline on focused links when they are also active or hovered in all browsers (opinionated). */
+/* line 115, _sass/base/_normalize.scss */ a:active, a:hover { outline-width: 0; }
+
+/** 1. Remove the bottom border in Firefox 39-. 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
+/* line 125, _sass/base/_normalize.scss */ abbr[title] { border-bottom: none; /* 1 */ text-decoration: underline; /* 2 */ text-decoration: underline dotted; /* 2 */ }
+
+/** Prevent the duplicate application of `bolder` by the next rule in Safari 6. */
+/* line 135, _sass/base/_normalize.scss */ b, strong { font-weight: inherit; }
+
+/** Add the correct font weight in Chrome, Edge, and Safari. */
+/* line 144, _sass/base/_normalize.scss */ b, strong { font-weight: bolder; }
+
+/** 1. Correct the inheritance and scaling of font size in all browsers. 2. Correct the odd `em` font sizing in all browsers. */
+/* line 154, _sass/base/_normalize.scss */ code, kbd, samp { font-family: monospace, monospace; /* 1 */ font-size: 1em; /* 2 */ }
+
+/** Add the correct font style in Android 4.3-. */
+/* line 165, _sass/base/_normalize.scss */ dfn { font-style: italic; }
+
+/** Add the correct background and color in IE 9-. */
+/* line 173, _sass/base/_normalize.scss */ mark { background-color: #ff0; color: #000; }
+
+/** Add the correct font size in all browsers. */
+/* line 182, _sass/base/_normalize.scss */ small { font-size: 80%; }
+
+/** Prevent `sub` and `sup` elements from affecting the line height in all browsers. */
+/* line 191, _sass/base/_normalize.scss */ sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+/* line 199, _sass/base/_normalize.scss */ sub { bottom: -0.25em; }
+
+/* line 203, _sass/base/_normalize.scss */ sup { top: -0.5em; }
+
+/* Embedded content ========================================================================== */
+/** Add the correct display in IE 9-. */
+/* line 214, _sass/base/_normalize.scss */ audio, video { display: inline-block; }
+
+/** Add the correct display in iOS 4-7. */
+/* line 223, _sass/base/_normalize.scss */ audio:not([controls]) { display: none; height: 0; }
+
+/** Remove the border on images inside links in IE 10-. */
+/* line 232, _sass/base/_normalize.scss */ img { border-style: none; }
+
+/** Hide the overflow in IE. */
+/* line 240, _sass/base/_normalize.scss */ svg:not(:root) { overflow: hidden; }
+
+/* Forms ========================================================================== */
+/** 1. Change the font styles in all browsers (opinionated). 2. Remove the margin in Firefox and Safari. */
+/* line 252, _sass/base/_normalize.scss */ button, input, optgroup, select, textarea { font-family: sans-serif; /* 1 */ font-size: 100%; /* 1 */ line-height: 1.15; /* 1 */ margin: 0; /* 2 */ }
+
+/** Show the overflow in IE. 1. Show the overflow in Edge. */
+/* line 268, _sass/base/_normalize.scss */ button, input { /* 1 */ overflow: visible; }
+
+/** Remove the inheritance of text transform in Edge, Firefox, and IE. 1. Remove the inheritance of text transform in Firefox. */
+/* line 278, _sass/base/_normalize.scss */ button, select { /* 1 */ text-transform: none; }
+
+/** 1. Prevent a WebKit bug where (2) destroys native `audio` and `video` controls in Android 4. 2. Correct the inability to style clickable types in iOS and Safari. */
+/* line 289, _sass/base/_normalize.scss */ button, html [type="button"], [type="reset"], [type="submit"] { -webkit-appearance: button; /* 2 */ }
+
+/** Remove the inner border and padding in Firefox. */
+/* line 300, _sass/base/_normalize.scss */ button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner { border-style: none; padding: 0; }
+
+/** Restore the focus styles unset by the previous rule. */
+/* line 312, _sass/base/_normalize.scss */ button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring { outline: 1px dotted ButtonText; }
+
+/** Change the border, margin, and padding in all browsers (opinionated). */
+/* line 323, _sass/base/_normalize.scss */ fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+
+/** 1. Correct the text wrapping in Edge and IE. 2. Correct the color inheritance from `fieldset` elements in IE. 3. Remove the padding so developers are not caught out when they zero out `fieldset` elements in all browsers. */
+/* line 336, _sass/base/_normalize.scss */ legend { box-sizing: border-box; /* 1 */ color: inherit; /* 2 */ display: table; /* 1 */ max-width: 100%; /* 1 */ padding: 0; /* 3 */ white-space: normal; /* 1 */ }
+
+/** 1. Add the correct display in IE 9-. 2. Add the correct vertical alignment in Chrome, Firefox, and Opera. */
+/* line 350, _sass/base/_normalize.scss */ progress { display: inline-block; /* 1 */ vertical-align: baseline; /* 2 */ }
+
+/** Remove the default vertical scrollbar in IE. */
+/* line 359, _sass/base/_normalize.scss */ textarea { overflow: auto; }
+
+/** 1. Add the correct box sizing in IE 10-. 2. Remove the padding in IE 10-. */
+/* line 368, _sass/base/_normalize.scss */ [type="checkbox"], [type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/** Correct the cursor style of increment and decrement buttons in Chrome. */
+/* line 378, _sass/base/_normalize.scss */ [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; }
+
+/** 1. Correct the odd appearance in Chrome and Safari. 2. Correct the outline style in Safari. */
+/* line 388, _sass/base/_normalize.scss */ [type="search"] { -webkit-appearance: textfield; /* 1 */ outline-offset: -2px; /* 2 */ }
+
+/** Remove the inner padding and cancel buttons in Chrome and Safari on macOS. */
+/* line 397, _sass/base/_normalize.scss */ [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/** 1. Correct the inability to style clickable types in iOS and Safari. 2. Change font properties to `inherit` in Safari. */
+/* line 407, _sass/base/_normalize.scss */ ::-webkit-file-upload-button { -webkit-appearance: button; /* 1 */ font: inherit; /* 2 */ }
+
+/* Interactive ========================================================================== */
+/* Add the correct display in IE 9-. 1. Add the correct display in Edge, IE, and Firefox. */
+/* line 420, _sass/base/_normalize.scss */ details, menu { display: block; }
+
+/* Add the correct display in all browsers. */
+/* line 429, _sass/base/_normalize.scss */ summary { display: list-item; }
+
+/* Scripting ========================================================================== */
+/** Add the correct display in IE 9-. */
+/* line 440, _sass/base/_normalize.scss */ canvas { display: inline-block; }
+
+/** Add the correct display in IE. */
+/* line 448, _sass/base/_normalize.scss */ template { display: none; }
+
+/* Hidden ========================================================================== */
+/** Add the correct display in IE 10-. */
+/* line 459, _sass/base/_normalize.scss */ [hidden] { display: none; }
+
+/** Basic styling */
+/* line 4, _sass/base/_base.scss */ *, *:before, *:after { box-sizing: border-box; }
+
+/* line 10, _sass/base/_base.scss */ body { font: normal 300 1.125em/1.8em "Source Serif Pro", Constantia, "Lucida Bright", "Lucida Serif", Lucida, "Liberation Serif", Georgia, serif; letter-spacing: 0.01rem; color: #3e3e3e; background: #ffffff; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+@media only screen and (max-width: 30rem) { /* line 10, _sass/base/_base.scss */ body { background-image: none; } }
+
+/** Images */
+/* line 27, _sass/base/_base.scss */ img { max-width: 100%; vertical-align: middle; border-radius: 2px; }
+
+/** Figures */
+/* line 37, _sass/base/_base.scss */ figure { width: 100%; margin: 0 auto; position: relative; clear: both; outline: 0; box-sizing: border-box; user-select: auto; z-index: 100; }
+
+/* line 47, _sass/base/_base.scss */ figure > img { display: block; margin: 0 auto; }
+
+/* line 53, _sass/base/_base.scss */ figcaption { position: relative; width: 100%; left: 0; top: 0; color: rgba(62, 62, 62, 0.6); outline: 0; text-align: center; font-size: 14px; margin: 10px auto 0; }
+
+/** Headings */
+/* line 68, _sass/base/_base.scss */ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, h6 { font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 1.2em; font-weight: 700; }
+
+/* line 73, _sass/base/_base.scss */ h1 code, .h1 code, h2 code, .h2 code, h3 code, .h3 code, h4 code, .h4 code, h5 code, h6 code { font-size: .8em; }
+
+/* line 91, _sass/base/_base.scss */ h1, .h1 { font-size: 3rem; }
+
+/* line 96, _sass/base/_base.scss */ h2, .h2 { font-size: 2.25rem; margin-top: 3rem; }
+
+/* line 102, _sass/base/_base.scss */ h3, .h3 { font-size: 1.875rem; }
+
+/* line 106, _sass/base/_base.scss */ h4, .h4 { font-size: 1.5rem; }
+
+@media only screen and (max-width: 768px) { /* line 111, _sass/base/_base.scss */ h1, .h1 { font-size: 2.8rem; }
+  /* line 114, _sass/base/_base.scss */ h2, .h2 { font-size: 2.2rem; } }
+
+@media only screen and (max-width: 480px) { /* line 120, _sass/base/_base.scss */ h1, .h1 { font-size: 1.75rem; }
+  /* line 123, _sass/base/_base.scss */ h2, .h2 { font-size: 1.5rem; }
+  /* line 126, _sass/base/_base.scss */ h3, .h3 { font-size: 1.3rem; }
+  /* line 129, _sass/base/_base.scss */ h4, .h4 { font-size: 1.125rem; } }
+
+/** Paragraphs */
+/* line 137, _sass/base/_base.scss */ p { margin: 0 0 1.875rem; }
+
+/** Bolder */
+/* line 144, _sass/base/_base.scss */ b, strong { font-weight: bold; }
+
+/** Blockquotes */
+/* line 152, _sass/base/_base.scss */ blockquote { position: relative; margin: 3.75rem 0; padding: 0 2.5em; text-align: center; font-style: italic; font-size: 1.5rem; line-height: 1.5em; color: #7a7a7a; }
+
+/* line 162, _sass/base/_base.scss */ blockquote:after, blockquote:before { position: absolute; font-size: 4em; color: rgba(66, 153, 255, 0.6); z-index: -1; font-family: 'Droid Serif', georgia, serif; }
+
+/* line 170, _sass/base/_base.scss */ blockquote:after { content: "''"; right: 0px; }
+
+/* line 175, _sass/base/_base.scss */ blockquote:before { content: "''"; left: 0px; }
+
+/* line 180, _sass/base/_base.scss */ blockquote > :last-child { margin-bottom: 0; }
+
+/** Horizontal Reference */
+/* line 188, _sass/base/_base.scss */ hr { box-sizing: content-box; height: 0; display: block; border: 0; text-align: center; margin-top: 50px; margin-bottom: 50px; }
+
+/* line 197, _sass/base/_base.scss */ hr:before { content: '...'; display: inline-block; margin-left: .6em; color: rgba(62, 62, 62, 0.4); position: relative; top: -30px; font-size: 1.8rem; letter-spacing: .6em; }
+
+@media only screen and (max-width: 768px) { /* line 210, _sass/base/_base.scss */ hr { margin-top: 30px; margin-bottom: 30px; font-size: 1.25rem; line-height: 1.4; } }
+
+/** Code formatting */
+/* line 221, _sass/base/_base.scss */ pre, code { font-size: 1em; border-radius: 2px; }
+
+/* line 227, _sass/base/_base.scss */ code { font-family: "Fira Mono", "monaco", "Consolas", "Lucida Console", monospace; font-size: 1rem; letter-spacing: -0.3px; padding: 1px 5px; white-space: normal; }
+
+/* line 235, _sass/base/_base.scss */ :not(pre) > code { background: #f0f3f5; border: 1px solid #e4e4e4; margin: 0 0.05em; padding: 1px 5px; white-space: nowrap; }
+
+/* line 243, _sass/base/_base.scss */ pre { background: #f0f3f5; line-height: 1.35; overflow-x: auto; margin: 1.875rem 0; white-space: pre; word-wrap: normal; box-shadow: 0 1px 1px rgba(62, 62, 62, 0.12); -webkit-overflow-scrolling: touch; }
+
+/* line 253, _sass/base/_base.scss */ pre > code { border-radius: 2px; color: #3d3e44; display: block; outline: none; overflow-x: auto; padding: 1rem; white-space: inherit; }
+
+/** Clearfix */
+/* line 270, _sass/base/_base.scss */ .wrapper:after, .container:after, .clearfix:after { content: ""; display: table; clear: both; }
+
+/** Hidden */
+/* line 280, _sass/base/_base.scss */ .hidden { visibility: hidden; display: none; }
+
+/** Default list */
+/* line 288, _sass/base/_base.scss */ .default-list, .post-list, .social-links, .references-box__list { list-style-type: none; margin: 0; padding: 0; }
+
+/** Image rounded */
+/* line 297, _sass/base/_base.scss */ .img-rounded { border-radius: 50%; }
+
+/** Center */
+/* line 304, _sass/base/_base.scss */ .center { margin-left: auto; margin-right: auto; }
+
+/* line 309, _sass/base/_base.scss */ .text-center { text-align: center !important; }
+
+/* line 313, _sass/base/_base.scss */ .text-light { font-weight: normal; }
+
+/* line 317, _sass/base/_base.scss */ .text-base-color { color: #4299ff; }
+
+/** Links */
+/* line 324, _sass/base/_base.scss */ a { color: #3e3e3e; border-bottom: 1px solid #4299ff; text-decoration: none; transition: all 300ms ease-in-out; }
+
+/* line 330, _sass/base/_base.scss */ a:active, a:hover { color: #0f7dff; border-color: #0f7dff; outline: 0; }
+
+/* line 338, _sass/base/_base.scss */ .website { display: flex; min-height: 100vh; flex-direction: column; }
+
+/* line 344, _sass/base/_base.scss */ .wrapper { flex: 1; padding-top: 7.5rem; padding-bottom: 3.75rem; }
+
+@media only screen and (min-width: 48rem) { /* line 344, _sass/base/_base.scss */ .wrapper { padding-top: 9.375rem; padding-bottom: 5.625rem; } }
+
+@media only screen and (min-width: 60rem) { /* line 344, _sass/base/_base.scss */ .wrapper { padding-top: 11.25rem; } }
+
+@media only screen and (min-width: 75rem) { /* line 344, _sass/base/_base.scss */ .wrapper { padding-top: 13.125rem; } }
+
+/* line 364, _sass/base/_base.scss */ .container { position: relative; display: block; width: 45rem; max-width: 100%; margin-right: auto; margin-left: auto; padding-right: 1rem; padding-left: 1rem; }
+
+/* line 376, _sass/base/_base.scss */ .title-hero { margin: 5.625rem 0 1.875rem; color: #4299ff; text-transform: uppercase; font-size: 13px; position: relative; }
+
+/* line 383, _sass/base/_base.scss */ .title-hero:after { content: ''; display: block; height: 2px; width: 3.125rem; margin: 1.25rem 0 0; background: #4299ff; }
+
+/* line 1, _sass/base/_animations.scss */ .animate { animation: fade-in-down 600ms; animation-delay: 200ms; }
+
+@-webkit-keyframes fade-in-down { 0% { opacity: 0;
+    transform: translateY(-10px); }
+  100% { opacity: 1;
+    transform: translateY(0); } }
+
+@-moz-keyframes fade-in-down { 0% { opacity: 0;
+    transform: translateY(-10px); }
+  100% { opacity: 1;
+    transform: translateY(0); } }
+
+@-ms-keyframes fade-in-down { /* line 7, _sass/base/_animations.scss */ 0% { opacity: 0; transform: translateY(-10px); }
+  /* line 11, _sass/base/_animations.scss */ 100% { opacity: 1; transform: translateY(0); } }
+
+@-o-keyframes fade-in-down { 0% { opacity: 0;
+    transform: translateY(-10px); }
+  100% { opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes fade-in-down { 0% { opacity: 0;
+    transform: translateY(-10px); }
+  100% { opacity: 1;
+    transform: translateY(0); } }
+
+@-webkit-keyframes fade { 0% { opacity: 0; }
+  60% { opacity: 0; }
+  100% { opacity: 1; } }
+
+@-moz-keyframes fade { 0% { opacity: 0; }
+  60% { opacity: 0; }
+  100% { opacity: 1; } }
+
+@-ms-keyframes fade { /* line 18, _sass/base/_animations.scss */ 0% { opacity: 0; }
+  /* line 21, _sass/base/_animations.scss */ 60% { opacity: 0; }
+  /* line 24, _sass/base/_animations.scss */ 100% { opacity: 1; } }
+
+@-o-keyframes fade { 0% { opacity: 0; }
+  60% { opacity: 0; }
+  100% { opacity: 1; } }
+
+@keyframes fade { 0% { opacity: 0; }
+  60% { opacity: 0; }
+  100% { opacity: 1; } }
+
+/** Tables */
+/* line 4, _sass/base/_tables.scss */ table { width: 100%; margin: 30px 0; border-collapse: collapse; border-spacing: 0; }
+
+/* line 11, _sass/base/_tables.scss */ th, td { text-align: left; padding-right: 15px; vertical-align: top; }
+
+/* line 18, _sass/base/_tables.scss */ table td, td { border-spacing: none; border-style: solid; padding: 10px 15px; border-width: 1px 0 0 0; }
+
+/* line 26, _sass/base/_tables.scss */ tr > td { border-top: 1px solid #e2e2e2; }
+
+/* line 30, _sass/base/_tables.scss */ tr:nth-child(odd) > td { background: #f0f3f5; }
+
+/* line 34, _sass/base/_tables.scss */ thead th, th { text-align: left; padding: 15px; font-weight: bold; border-bottom: 1px solid #4299ff; cursor: default; white-space: nowrap; }
+
+/* line 1, _sass/components/_btn.scss */ .btn { -webkit-appearance: none; display: inline-block; vertical-align: middle; border-bottom: 1px solid #3e3e3e; cursor: pointer; margin: 0; padding-bottom: 1.25rem; color: #3e3e3e; font: 700 13px "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; letter-spacing: 3.5px; transition: all 300ms; text-align: center; text-decoration: none; text-transform: uppercase; user-select: none; white-space: normal; }
+
+/* line 19, _sass/components/_btn.scss */ .btn:hover, .btn:active { color: #4299ff; border-color: #4299ff; }
+
+/* line 1, _sass/components/_post-list.scss */ .post-list { margin: 3.125rem 0; animation: fade 600ms ease; }
+
+/* line 6, _sass/components/_post-list.scss */ .post-list__item { display: block; padding: 1.25rem 0; border-bottom: 1px solid #e2e2e2; }
+
+/* line 11, _sass/components/_post-list.scss */ .post-list__item:first-child { padding-top: 0; }
+
+/* line 15, _sass/components/_post-list.scss */ .post-list__item:last-child { border: 0; padding-bottom: 0; }
+
+/* line 22, _sass/components/_post-list.scss */ .post-list__title { margin: 0.9375rem 0; }
+
+/* line 26, _sass/components/_post-list.scss */ .post-list__link { display: block; color: #333; border: 0; transition: color 300ms ease-in-out; }
+
+/* line 32, _sass/components/_post-list.scss */ .post-list__link:hover, .post-list__link:active { color: #4299ff; }
+
+/* line 37, _sass/components/_post-list.scss */ .post-list__description { margin-bottom: 0.9375rem; }
+
+/* line 41, _sass/components/_post-list.scss */ .post-list__meta { font-size: 1rem; text-transform: uppercase; }
+
+/* line 48, _sass/components/_post-list.scss */ .post-list__meta span { margin-left: 0.9375rem; }
+
+/* line 51, _sass/components/_post-list.scss */ .post-list__meta span:before { content: '|'; margin-right: 0.9375rem; }
+
+/* line 62, _sass/components/_post-list.scss */ .post-list__meta--center { text-align: center; }
+
+/* line 1, _sass/components/_meta-tags.scss */ .meta-tags { font-size: 0.8125rem; font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; text-transform: uppercase; margin: 0; padding: 0; }
+
+/* line 8, _sass/components/_meta-tags.scss */ .meta-tags--center { text-align: center; }
+
+/* line 12, _sass/components/_meta-tags.scss */ .meta-tags__item { display: inline-block; }
+
+/* line 15, _sass/components/_meta-tags.scss */ .meta-tags__item:after { content: ","; display: inline-block; margin-left: -0.0625rem; margin-right: 0.3125rem; }
+
+/* line 22, _sass/components/_meta-tags.scss */ .meta-tags__item:last-child:after { display: none; }
+
+/* line 27, _sass/components/_meta-tags.scss */ .meta-tags a { color: #4299ff; border: none; font-weight: 600; }
+
+/* line 1, _sass/components/_info-box.scss */ .info-box { font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; padding: 0.9375rem; margin: 1.875rem 0; background-color: rgba(247, 232, 79, 0.25); border-left: 0.5rem solid rgba(247, 232, 79, 0.6); }
+
+/* line 8, _sass/components/_info-box.scss */ .info-box.warning { background-color: rgba(218, 57, 63, 0.25); border-color: rgba(218, 57, 63, 0.6); }
+
+/* line 13, _sass/components/_info-box.scss */ .info-box.success { background-color: rgba(69, 197, 95, 0.25); border-color: rgba(69, 197, 95, 0.6); }
+
+/* line 18, _sass/components/_info-box.scss */ .info-box.info { background-color: rgba(66, 153, 255, 0.25); border-color: rgba(66, 153, 255, 0.6); }
+
+/* line 1, _sass/components/_social-links.scss */ .social-links { text-align: center; padding-bottom: 3.125rem; list-style-type: none; }
+
+/* line 7, _sass/components/_social-links.scss */ .social-links li { margin: 10; display: inline-block; }
+
+/* line 12, _sass/components/_social-links.scss */ .social-links a { border: none; border-bottom: none; }
+
+/* line 17, _sass/components/_social-links.scss */ .social-links svg { width: 1.25rem; fill: rgba(122, 122, 122, 0.6); transition: all 300ms ease; }
+
+/* line 23, _sass/components/_social-links.scss */ .social-links a:hover svg { fill: #0f7dff; }
+
+/* line 1, _sass/components/_references-box.scss */ .references-box { padding-bottom: 3.125rem; }
+
+/* line 4, _sass/components/_references-box.scss */ .references-box__list { padding: 1.25rem; border: 3px solid #4299ff; }
+
+/* line 10, _sass/components/_references-box.scss */ .references-box li { font-size: 0.875rem; margin: 0.3125rem 0 0.3125rem 0.625rem; }
+
+/* line 14, _sass/components/_references-box.scss */ .references-box li:before { content: "→"; color: #4299ff; }
+
+/* line 20, _sass/components/_references-box.scss */ .references-box .comment { color: #7a7a7a; font-family: "Fira Mono", "monaco", "Consolas", "Lucida Console", monospace; padding-left: 4px; }
+
+/* line 1, _sass/components/_survey.scss */ .survey { padding: 0.625rem 1.875rem 3.125rem; margin: 3.125rem 0; background: #45c55f; font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #ffffff; }
+
+/* line 8, _sass/components/_survey.scss */ .survey h4, .survey .h4 { text-transform: uppercase; }
+
+/* line 12, _sass/components/_survey.scss */ .survey a { color: #ffffff; border-color: #ffffff; }
+
+/* line 16, _sass/components/_survey.scss */ .survey a:hover { color: #3e3e3e; border-color: #3e3e3e; }
+
+/* line 1, _sass/components/_toc.scss */ .toc { font-family: "Sofia Pro", "Helvetica Neue", Helvetica, Arial, sans-serif; background: #f7f8fb; padding: 0 0.9375rem; margin: 1.875rem 0; border-radius: 0.1875rem; border: 1px solid #e6e9f3; }
+
+@media only screen and (min-width: 48rem) { /* line 1, _sass/components/_toc.scss */ .toc { padding: 0 1.875rem; } }
+
+/* line 13, _sass/components/_toc.scss */ .toc .title-hero { color: #3e3e3e; margin-top: 0; }
+
+/* line 19, _sass/components/_toc.scss */ .toc p { margin: 0; }
+
+/* line 23, _sass/components/_toc.scss */ .toc ul { list-style: none; padding-left: 0.625rem; font-size: 1rem; }
+
+/* line 29, _sass/components/_toc.scss */ .toc li { position: relative; padding: 4px 15px; }
+
+/* line 33, _sass/components/_toc.scss */ .toc li:before { position: absolute; top: 5px; left: -14px; content: ''; background-image: url("/assets/svgs/link.svg"); background-position: 0 0; background-repeat: no-repeat; background-size: contain; opacity: .3; width: 22px; height: 22px; }
+
+/* line 46, _sass/components/_toc.scss */ .toc a { color: #3f4754; transition: all .2s ease; border: none; }
+
+/* line 51, _sass/components/_toc.scss */ .toc a:hover { color: #78859a; }
+
+/* line 1, _sass/components/_pagination.scss */ .pagination { padding: 0; margin: 0; width: 100%; text-align: center; list-style: none; }
+
+/* line 8, _sass/components/_pagination.scss */ .pagination__item { display: inline; padding: 0; margin-left: 0; margin-right: 1.25rem; }
+
+@media only screen and (max-width: 30rem) { /* line 8, _sass/components/_pagination.scss */ .pagination__item { display: block; } }
+
+@media only screen and (min-width: 48rem) { /* line 8, _sass/components/_pagination.scss */ .pagination__item { margin: 0 40px; } }
+
+/* line 22, _sass/components/_pagination.scss */ .pagination__item:first-child { margin: 0; }
+
+/** Twitter Widget */
+/* line 4, _sass/themes/_theme.scss */ twitterwidget { margin: 0 auto; }
+
+/** Iframe Wrapper */
+/* line 11, _sass/themes/_theme.scss */ .iframe-wrap { position: relative; height: 0; padding-top: 1.875rem; padding-bottom: 56.25%; margin-bottom: 1.875rem; overflow: hidden; border: none; border-radius: 2px; box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.6), 0px 2px 10px rgba(0, 0, 0, 0.12); }
+
+/* line 23, _sass/themes/_theme.scss */ .iframe-wrap > iframe { border: none; border-radius: 2px; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
+
+/*# sourceMappingURL=main.css.map */
