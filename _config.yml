@@ -15,6 +15,7 @@ safe: false
 lsi: false
 
 relative_source: ../mayant15.github.io/
+destination: ../blog-out/
 
 # Settings for deploy rake task
 username: mayant15
