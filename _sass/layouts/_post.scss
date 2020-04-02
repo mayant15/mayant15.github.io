@@ -2,6 +2,30 @@
   position: relative;
   padding-bottom: rem(50);
 
+  &__image {
+    p {
+      font-size: 16px;
+      color: #909090;
+      text-align: center;
+      line-height: 1.2em;
+      padding: 0.8em;
+    }
+  }
+
+  &__video {
+    iframe {
+      width: 100%;
+    }
+
+    p {
+      font-size: 16px;
+      color: #909090;
+      text-align: center;
+      line-height: 1.2em;
+      padding: 0.8em;
+    }
+  }
+
   &__header {
     text-align: center;
   }

@@ -13,4 +13,5 @@ This is my personal website. Powered by [Jekyll](https://jekyllrb.com/). Adapted
 - Fix social links under posts
 - Implement syntax highlighting
 - Fix the pagination "next page" li discrepancy between firefox and chrome
+- Find a better way to add images with subtext
 
