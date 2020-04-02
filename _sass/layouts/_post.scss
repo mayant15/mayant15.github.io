@@ -2,6 +2,26 @@
   position: relative;
   padding-bottom: rem(50);
 
+  &__score {
+    display: block;
+    text-align: center;
+
+    p {
+      margin: auto;
+      font-size: 7em;
+      line-height: initial;
+      background-color: #e2e2e2;
+    }
+  }
+
+  &__summary {
+    margin: 1.2em;
+    padding-top: initial;
+    .col {
+      width: 50%;
+    }
+  }
+
   &__image {
     p {
       font-size: 16px;

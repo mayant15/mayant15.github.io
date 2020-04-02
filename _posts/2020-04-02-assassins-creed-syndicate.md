@@ -5,6 +5,15 @@ tags: review
 image: assets/images/posts/acs-banner.jpg
 description: >
    Saving Victorian London from a power hungry Templar. Just like old times.
+score: 7
+pros:
+    - Good gameplay and fighting
+    - Multiple stealth options
+    - Only one eavesdrop mission
+cons:
+    - A very plain story
+    - Forgettable characters
+    - Overloaded, purposeless world and activities
 ---
 
 ***Note: This article has spoilers.***
@@ -17,7 +26,7 @@ We have two playable characters this time. Siblings Jacob and Evie Frye. The gam
 
 Most of the action happens in London, a large dull city with an even larger income gap. Sometimes it is colourful, sometimes it is bleak, but mostly it is pretty empty. This is just a personal preference, but I like worlds filled with details that make your experience more immersive, like Kamurocho (Yakuza series) or Prague (Deus Ex Mankind Divided). I really don't know if historical accuracy is what they were going for, and that is why the city is the way it is. It is simply not that interesting to look at for me. Again, this is just a matter of personal taste. I don't really play open-world games a lot.
 
-{% include post/image.html img="/assets/images/posts/acs-london.jpg" desc="Beautiful London" %}
+{% include post/image.html img="/assets/images/posts/acs-london.jpg" desc="London is beautiful, but equally shallow." %}
 
 Gang rivalries and gaining control of boroughs is a nice addition, but like other optional things to do in this game, it gets stale pretty fast. It basically boils down to doing 3-4 categories of activities at least twice, i.e. doing 8-9 of these activities, and then fighting a gang leader to get control of a borough. Rinse and repeat for every district. The activities stay the same, the gang leader battles remain the same. There is a "friendship meter" and doing these activities repeatedly will get you more rewards from those friends. These rewards could be upgrades or new weapons. But it really doesn't matter which borough you do them in. The fact that you're doing these activities to take control of an area doesn't matter. The only thing that matters is doing these activities. WW1 memories brought some very welcome change of pace to the game, but it is mostly plagued by the same problems. There's loads of stuff to collect, which gives you pages and pages of material to read in the in-game encyclopedia that I almost always skipped.
 
@@ -47,22 +56,7 @@ The villains might be slightly better but are still forgettable. Maxwell Roth is
 
 Assassin's Creed Syndicate is a game with a good gameplay loop, which is honestly really fun. It retains the core gameplay elements that make this series so great and also adds some new changes like kidnapping and the assassination options. But the repetitive side activities suck out all that fun. Bored with them and want to focus on the main story only? You can't because the main story is just as uninteresting.
 
+{% include post/score-summary.html %}
 
 
-**7/10**
-
-Pros: 
-
-- Good gameplay and fighting
-- Multiple stealth options
-- Only one eavesdrop mission
-
-Cons:
-
-- A very plain story
-- Forgettable characters
-- Overloaded, purposeless world and activities
-
-
-*The article banner has been taken from [hdwallpapers.in](https://www.hdwallpapers.in/assassins_creed_syndicate-wallpapers.html).*
-*The image of St. Paul's Cathedral has been taken from [here](https://www.gamespot.com/assassins-creed-syndicate/images/)*
+*The article banner has been taken from [hdwallpapers.in](https://www.hdwallpapers.in/assassins_creed_syndicate-wallpapers.html) and the image of St. Paul's Cathedral has been taken from [GameSpot](https://www.gamespot.com/assassins-creed-syndicate/images/).*
