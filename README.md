@@ -15,4 +15,4 @@ This is my personal website. Powered by [Jekyll](https://jekyllrb.com/). Adapted
 - Fix the pagination "next page" li discrepancy between firefox and chrome
 - Find a better way to add images with subtext
 - Improve summary layout
-
+- Add a photo gallery
