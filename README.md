@@ -7,6 +7,7 @@ This is my personal website. Powered by [Jekyll](https://jekyllrb.com/). Adapted
 
 ## Todo
 
+- Add sitemap, archives and about to footer. Add projects to header.
 - Uncomment the _base.sass include to enable a background
 - The top navbar thing has a extra space after each word that is affecting underlines i.e. "Home " instead of just "Home"
 - Fix the “ and ” for blockquotes
@@ -16,3 +17,5 @@ This is my personal website. Powered by [Jekyll](https://jekyllrb.com/). Adapted
 - Find a better way to add images with subtext
 - Improve summary layout
 - Add a photo gallery
+- Fix tag pages
+- Read more on Jekyll collections, categories and tags

@@ -1,11 +1,8 @@
 ---
+layout: page
+permalink: /articles/
 title: "Articles"
 subtitle: "Random thoughts."
-redirects:
-  - /blog/
-layout: page
-robots: noindex
-sitemap: false
 pagination:
   enabled: true
 ---

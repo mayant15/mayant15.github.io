@@ -53,24 +53,6 @@ social:
   linkedin: https://www.linkedin.com/in/mayant-mukul-222086172/
   github: https://github.com/mayant15
 
-# Collections
-collections:
-  trips:
-    output: false
-    permalink: /trips/:title/
-
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: post
-  - scope:
-      path: ""
-      type: "trips"
-    values:
-      layout: trip
-
 # Paths
 baseurl: ""
 asset_path:     "assets"
@@ -88,16 +70,33 @@ sass:
   sourcemap:    always
   line_comments: true
 
+# Collections
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
 # Output
-# permalink:      /:year/:title/
-paginate:       10
-paginate_path:  "/articles/page/:num/"
 future:         false
 show_drafts:    false
 
+# Pagination
+pagination:
+  enabled: true
+  collection: 'posts'
+  per_page: 10
+  sort_reverse: true
+  title: ':title'
+
 # Plugins
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-seo-tag
   - jekyll-sitemap
 

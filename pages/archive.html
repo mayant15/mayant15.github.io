@@ -1,22 +1,12 @@
 ---
 title: Archives
+subtitle: "Here lie all my posts"
 permalink: /archive/
 
 layout: page
 ---
 
-{% assign items = "" | split: "" %}
-
-{% for collection in site.collections %}
-  {% if collection.archive != false %}
-    {% assign collection_items = site[collection.label] %}
-    {% for collection_item in collection_items %}
-      {% assign items = items | push: collection_item %}
-    {% endfor %}
-  {% endif %}
-{% endfor %}
-
-{% assign items = items | sort: 'date' | reverse %}
+{% assign items = site.posts | sort: 'date' | reverse %}
 
 {% for item in items %}
 
@@ -45,3 +35,5 @@ layout: page
   {% endif %}
 
 {% endfor %}
+
+<i>End.</i>
