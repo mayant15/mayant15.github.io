@@ -7,8 +7,9 @@ This is my personal website. Powered by [Jekyll](https://jekyllrb.com/). Adapted
 
 ## Todo
 
+- Create a projects page
 - Uncomment the _base.sass include to enable a background
-- The top navbar thing has a extra space after each word that is affecting underlines i.e. "Home " instead of just "Home"
+- *Firefox*:The top navbar thing has a extra space after each word that is affecting underlines i.e. "Home " instead of just "Home"
 - Fix the “ and ” for blockquotes
 - Fix social links under posts
 - Implement syntax highlighting

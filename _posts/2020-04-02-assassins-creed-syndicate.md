@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Assassin's Creed Syndicate - Impressions
-tags: review
+tags: review gaming
 image: assets/images/posts/acs-banner.jpg
 description: >
    Saving Victorian London from a power hungry Templar. Just like old times.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  A Plague Tale Innocence - Impressions
-tags: review
+tags: review gaming
 image: assets/images/posts/apti-bleak.png
 description: >
    Saving your toddler brother from the Inquisition.

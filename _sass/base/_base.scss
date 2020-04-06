@@ -14,7 +14,7 @@ body {
   background: $white;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  // @include background('/assets/svgs/bg-elements.svg');
+  @include background('/assets/svgs/bg-elements.svg');
 
   @include media(small_only) {
     background-image: none;
