@@ -23,7 +23,7 @@ repo: mayant15.github.io
 branch: develop
 email: mayantmukul@hotmail.com
 
-# Author Informations
+# Author Information
 author:
   name:         Mayant Mukul
   first_name:   Mayant
@@ -106,12 +106,7 @@ exclude:
   - .jekyll-cache
   - Gemfile
   - Gemfile.lock
-  - node_modules
   - vendor
-  - _scripts
-  - package.json
-  - gulpfile.js
-  - webpack.config.js
   - README.md
   - Rakefile
   - "*.Rmd"

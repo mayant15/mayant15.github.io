@@ -1,22 +1,10 @@
-<script src="{{ "/assets/scripts/main.bundle.js" | absolute_url }}"></script>
-
 {% if page.javascripts %}
   {% for script_url in page.javascripts %}
     <script src="{{ script_url | absolute_url }}"></script>
   {% endfor %}
 {% endif %}
 
-<script type="text/javascript" defer="defer">
-  if( 'serviceWorker' in navigator && location.hostname !== 'localhost'){
-    navigator.serviceWorker.register('/sw3.js')
-      .then(reg => console.log('Service Worker magic! ❤️'))
-      .catch(err => console.log('Service Worker failed to register 😔', err));
-  }
-</script>
-
 <script>
-  console.log("Running Katex jQuery script.");
-
   $("script[type='math/tex']").replaceWith(function() {
       var tex = $(this).text();
       return katex.renderToString(tex, {displayMode: false});
