@@ -2,6 +2,11 @@
   <div class="container">
     <div class="footer__content">
       <div class="rule"></div>
+      <div>
+        {% for link in site.footer %}
+          <a href="{{ link.url }}">{{ link.text }}</a> {% unless forloop.last%}| {% endunless %}
+        {% endfor %}
+      </div>
       MIT License. Adapted from Rafaell Lycan's <a href="https://rafaell-lycan.com/">website</a>.
     </div>
   </div>

@@ -39,9 +39,22 @@ navigation:
   - text: Articles
     url: /articles
     active: articles
+  # TODO: Once the projects page is done, uncomment this to put it on the navbar
+  # - text: Projects
+  #   url: /projects
+  #   active: projects
   - text: About
     url: /about
     active: about
+
+footer:
+  - text: About
+    url: /about
+  - text: Archive
+    url: /archive
+  - text: Sitemap
+    url: /sitemap.xml
+
 
 social:
   name:         Mayant Mukul

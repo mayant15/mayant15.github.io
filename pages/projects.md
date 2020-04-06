@@ -1,9 +1,8 @@
 ---
+layout: page
+permalink: /projects/
 title: Projects
 subtitle: Design, code, events.
-permalink: /projects/
-
-layout: page
 ---
 
-Almost done! Check back soon.
+I'll put some of my projects here in a while.
