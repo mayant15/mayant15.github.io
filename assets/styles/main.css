@@ -148,7 +148,7 @@
 /** Basic styling */
 /* line 4, _sass/base/_base.scss */ *, *:before, *:after { box-sizing: border-box; }
 
-/* line 10, _sass/base/_base.scss */ body { font: normal 300 1.125em/1.8em "Source Serif Pro", Constantia, "Lucida Bright", "Lucida Serif", Lucida, "Liberation Serif", Georgia, serif; letter-spacing: 0.01rem; color: #3e3e3e; background: #ffffff; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+/* line 10, _sass/base/_base.scss */ body { font: normal 300 1.125em/1.8em "Source Serif Pro", Constantia, "Lucida Bright", "Lucida Serif", Lucida, "Liberation Serif", Georgia, serif; letter-spacing: 0.01rem; color: #3e3e3e; background: #ffffff; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; background-image: url("/assets/svgs/bg-elements.svg"); background-position: 0 0; background-repeat: no-repeat; }
 
 @media only screen and (max-width: 30rem) { /* line 10, _sass/base/_base.scss */ body { background-image: none; } }
 
