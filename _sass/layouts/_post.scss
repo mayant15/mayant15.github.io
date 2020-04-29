@@ -23,12 +23,19 @@
   }
 
   &__image {
+    align-content: center;
     p {
       font-size: 16px;
       color: #909090;
       text-align: center;
       line-height: 1.2em;
       padding: 0.8em;
+    }
+
+    img {
+        margin-bottom: 0.5em;
+        display: block;
+        width: 100%;
     }
   }
 

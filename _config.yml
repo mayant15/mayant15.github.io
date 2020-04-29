@@ -72,10 +72,8 @@ asset_path:     "assets"
 
 # Conversion
 markdown:       kramdown
-highlighter:    rouge
 kramdown:
   input:        GFM
-  syntax_highlighter: rouge
   parse_block_html: true
 
 sass:
