@@ -131,6 +131,3 @@ compress_html:
   startings: [body]
   profile: false
   blanklines: false
-
-kramdown:
-   math_engine: mathjax
