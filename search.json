@@ -1,0 +1,147 @@
+[
+  
+    {
+      "title"    : "Quotient Sets and Topologies",
+      "category" : "",
+      "tags"     : "topology",
+      "url"      : "/2020/05/18/quotient-spaces.html",
+      "date"     : "2020-05-18 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Linear and Polynomial Least Square Approximations",
+      "category" : "",
+      "tags"     : "numerical-analysis",
+      "url"      : "/2020/05/06/least-squares-discrete.html",
+      "date"     : "2020-05-06 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Binary Classification with Linear Discriminant Analysis",
+      "category" : "",
+      "tags"     : "data-mining, statistics",
+      "url"      : "/2020/04/29/linear-discriminant-analysis.html",
+      "date"     : "2020-04-29 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "A Plague Tale Innocence - Impressions",
+      "category" : "",
+      "tags"     : "review, gaming",
+      "url"      : "/2020/04/05/a-plague-tale-innocence.html",
+      "date"     : "2020-04-05 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Assassin&#39;s Creed Syndicate - Impressions",
+      "category" : "",
+      "tags"     : "review, gaming",
+      "url"      : "/2020/04/02/assassins-creed-syndicate.html",
+      "date"     : "2020-04-02 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Final Report: GSoC 2019",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/2019/08/19/gsoc-final-report.html",
+      "date"     : "2019-08-19 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Week 13: Player Item Drops",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/2019/08/16/gsoc-week-13.html",
+      "date"     : "2019-08-16 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Week 12: Quests",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/2019/08/06/gsoc-week-12.html",
+      "date"     : "2019-08-06 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Week 11: Trading and NPEs",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/2019/08/04/gsoc-week-11.html",
+      "date"     : "2019-08-04 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Week 10: Completing Marketplaces",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/2019/07/28/gsoc-week-10.html",
+      "date"     : "2019-07-28 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Week 9: Marketplace",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/2019/07/21/gsoc-week-9.html",
+      "date"     : "2019-07-21 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Week 8: Combat and Economy",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/2019/07/14/gsoc-week-8.html",
+      "date"     : "2019-07-14 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Week 7: AdvancedRails and Combat",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/2019/07/03/gsoc-week-7.html",
+      "date"     : "2019-07-03 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Week 6: Connecting Cities with Rails",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/2019/06/29/gsoc-week-6.html",
+      "date"     : "2019-06-29 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Weeks 4 and 5: Connecting Cities",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/2019/06/12/gsoc-week-4-5.html",
+      "date"     : "2019-06-12 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Week 3: Rails",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/2019/06/04/gsoc-week-3.html",
+      "date"     : "2019-06-04 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Week 2: The City",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/2019/06/02/gsoc-week-2.html",
+      "date"     : "2019-06-02 00:00:00 +0000"
+    } ,
+  
+    {
+      "title"    : "Week 1: The Terrain",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/2019/05/27/gsoc-week-1.html",
+      "date"     : "2019-05-27 00:00:00 +0000"
+    } 
+  
+]
