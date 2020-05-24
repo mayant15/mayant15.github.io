@@ -211,7 +211,6 @@ namespace :site do
     sh "git checkout #{SOURCE_BRANCH}"
     Dir.chdir(CONFIG["destination"]) do
         sh "git checkout #{DESTINATION_BRANCH}"
-        sh "pwd"
     end
 
     # Generate the site

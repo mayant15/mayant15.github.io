@@ -3,9 +3,7 @@
 This is my personal website. Powered by [Jekyll](https://jekyllrb.com/).
 
 [![Build Status](https://travis-ci.org/mayant15/mayant15.github.io.svg?branch=master)](https://travis-ci.org/mayant15/mayant15.github.io)
-
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/mayant15/mayant15.github.io/blob/master/LICENSE)
-
 <a href="https://simpleanalytics.com/mayantmukul.me?utm_source=mayantmukul.me&utm_content=badge" referrerpolicy="origin" target="_blank"><img src="https://simpleanalyticsbadge.com/mayantmukul.me?mode=dark" loading="lazy" referrerpolicy="no-referrer" crossorigin="anonymous" /></a>
 
 Adapted from Rafaell Lycan's [website](https://rafaell-lycan.com/)
