@@ -46,6 +46,9 @@ navigation:
   - text: About
     url: /about
     active: about
+  - text: Search
+    url: /search
+    active: search
 
 footer:
   - text: About

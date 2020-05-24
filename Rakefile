@@ -209,7 +209,10 @@ namespace :site do
     check_destination
 
     sh "git checkout #{SOURCE_BRANCH}"
-    Dir.chdir(CONFIG["destination"]) { sh "git checkout #{DESTINATION_BRANCH}" }
+    Dir.chdir(CONFIG["destination"]) do
+        sh "git checkout #{DESTINATION_BRANCH}"
+        sh "pwd"
+    end
 
     # Generate the site
     sh "bundle exec jekyll build"
@@ -218,6 +221,7 @@ namespace :site do
     sha = `git log`.match(/[a-z0-9]{40}/)[0]
     Dir.chdir(CONFIG["destination"]) do
       sh "git add --all ."
+      sh "git status"
       sh "git commit -m 'Updating to #{USERNAME}/#{REPO}@#{sha}.'"
       sh "git remote add origin-pages https://#{ENV["GH_TOKEN"]}@github.com/#{USERNAME}/#{REPO}"
       sh "git push origin-pages HEAD:#{DESTINATION_BRANCH} --force"

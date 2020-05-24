@@ -5,22 +5,23 @@ layout: compress
 <!doctype html>
 <html dir="ltr" lang="en-gb">
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body class="website">
+<body class="website">
 
     {% unless page.layout_options.hide_header %}
-      {% include header.html %}
+        {% include header.html %}
     {% endunless %}
 
     <main class="wrapper">
-      {{ content }}
+        {{ content }}
     </main>
 
     {% unless page.layout_options.hide_footer %}
-      {% include footer.html %}
+        {% include footer.html %}
     {% endunless %}
 
     {% include scripts.html %}
-  </body>
+</body>
+
 </html>

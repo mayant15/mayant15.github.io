@@ -12,3 +12,15 @@
 <!-- Simple Analytics -->
 <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""></noscript>
+
+<!-- Simple Jekyll Search -->
+<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+
+<!-- Configuration -->
+<script>
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search.json',
+    })
+</script>
