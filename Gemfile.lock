@@ -83,7 +83,7 @@ DEPENDENCIES
   rake (~> 12.3.3)
 
 RUBY VERSION
-   ruby 2.5.5p157
+   ruby 2.7.2p137
 
 BUNDLED WITH
-   2.0.1
+   2.1.4

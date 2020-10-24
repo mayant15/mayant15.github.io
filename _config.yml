@@ -1,12 +1,8 @@
 # Metadata
 title:          Mayant Mukul
-description:    >
-                You've reached my blog where I write about programming, gaming and sometimes math.
-keywords:       >
-                video games, unreal engine, cpp, r, developer, software
 logo:           /assets/icons/favicon-192x192.png
 image:          /assets/images/me.jpg
-url:            https://mayant15.github.io
+url:            https://mayantmukul.me
 repository:     mayant15/mayant15.github.io
 lang: en_GB
 
@@ -28,8 +24,8 @@ author:
   name:         Mayant Mukul
   first_name:   Mayant
   last_name:    Mukul
-  email:        mayantmukul@hotmail.com
-  location:     Kanpur
+  email:        mayantmukul@gmail.com
+  location:     New Delhi
   github:       mayant15
 
 navigation:
@@ -39,10 +35,6 @@ navigation:
   - text: Articles
     url: /articles
     active: articles
-  # TODO: Once the projects page is done, uncomment this to put it on the navbar
-  # - text: Projects
-  #   url: /projects
-  #   active: projects
   - text: About
     url: /about
     active: about
@@ -51,23 +43,20 @@ navigation:
     active: search
 
 footer:
-  - text: About
-    url: /about
   - text: Archive
     url: /archive
   - text: Sitemap
     url: /sitemap.xml
 
-
 social:
   name:         Mayant Mukul
   links:
-    - https://www.facebook.com/mayant.mukul
     - https://github.com/mayant15
     - https://www.linkedin.com/in/mayant-mukul-222086172/
-  facebook: https://www.facebook.com/mayant.mukul
+    - mailto:mayantmukul@gmail.com
   linkedin: https://www.linkedin.com/in/mayant-mukul-222086172/
   github: https://github.com/mayant15
+  email: mailto:mayantmukul@gmail.com
 
 # Paths
 baseurl: ""

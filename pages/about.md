@@ -2,10 +2,6 @@
 layout: page
 permalink: /about/
 title: About Me
-subtitle: Biography and contact information
 ---
 
-I'm Mayant Mukul, a junior mathematics undergraduate at the Indian Institute of Technology, Kanpur. I'm interested in tech, specifically video games and programming.
-Contact me on [LinkedIn](https://www.linkedin.com/in/mayant-mukul-222086172/) or by [email](mailto:mayantmukul@hotmail.com).
-
-{% include post/image.html %}
+I'm Mayant, a senior mathematics undergraduate at the Indian Institute of Technology, Kanpur. I'm interested in software architecture, designing complex programmes with multiple independent components that run in harmony. My current field of interest is computer graphics and I'm working on a game engine called [Lotus](https://github.com/mayant15/lotus/). Connect with me on [LinkedIn](https://www.linkedin.com/in/mayant-mukul-222086172/) or by [email](mailto:mayantmukul@gmail.com).

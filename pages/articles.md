@@ -2,7 +2,6 @@
 layout: page
 permalink: /articles/
 title: "Articles"
-subtitle: "Random thoughts."
 pagination:
   enabled: true
 ---
