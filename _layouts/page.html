@@ -1,29 +1,40 @@
 ---
 layout: default
+post_class: post-template page-template
 ---
 
+<!-- <nav class="main-nav clearfix">
+    <a class="back-button icon-arrow-left" href="{{ site.baseurl }}">Home</a>
+    <a class="subscribe-button icon-feed" href="{{ 'feed.xml' | relative_url}}">Subscribe</a>
+</nav> -->
 
-{% assign container = page.layout_options.container %}
-{% assign page_class = page.layout_options.class %}
+<header class="main-header post-head {% if page.cover %}"
+    style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+    <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
+        <a class="back-button icon-arrow-left" href="{{'/' | relative_url }}">Home</a>
+        <a class="subscribe-button icon-feed" href="{{'feed.xml' | relative_url }}">Subscribe</a>
+    </nav>
+</header>
 
-<article class="page {{ page_class }} page--{{ page.title | downcase | handleize }}">
 
-  {% unless page.layout_options.hide_page_title %}
-    {%
-      include page/header.html
-        title = page.title
-        subtitle = page.subtitle
-    %}
-  {% endunless %}
+<main class="content" role="main">
+    <article class="post">
+        <!-- <header class="post-header">
+            <a id="blog-logo" href="{{site.baseurl}}">
+                {% if site.logo %}
+                    <img src="{{site.logo}}" alt="{{ site.name }}" />
+                {% else %}
+                    <span class="blog-title">{{ site.name }}</span>
+                {%endif%}
+            </a>
+        </header> -->
 
-  {% unless container == false %}
-    <div class="container">
-  {% endunless %}
+        <h1 class="post-title">{{ page.title }}</h1>
 
-    {{ content }}
+        <section class="post-content">
+            {{content}}
+        </section>
 
-  {% unless container == false %}
-    </div>
-  {% endunless %}
+    </article>
 
-</article>
+</main>
