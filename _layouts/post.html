@@ -1,49 +1,86 @@
 ---
 layout: default
+archive: false
+post_class: post-template
 ---
 
-{% if page.math %}
-<!-- Fetch Katex and jQuery -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.css" integrity="sha384-bsHo4/LA+lkZv61JspMDQB9QP1TtO4IgOf2yYS+J6VdAYLVyx1c3XKcsHh0Vy8Ws" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.js" integrity="sha384-4z8mjH4yIpuK9dIQGR1JwbrfYsStrNK6MP+2Enhue4eyo0XlBDXOIPc8b6ZU0ajz" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.0/dist/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-{% endif %}
+<header class="main-header post-head {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
+    <nav class="main-nav {% if page.cover %} overlay {% endif %} clearfix">
+        <a class="back-button icon-arrow-left" href="{{'/' | relative_url }}">Home</a>
+        <a class="subscribe-button icon-feed" href="{{'feed.xml' | relative_url }}">Subscribe</a>
+    </nav>
+</header>
 
-<article class="post container" itemscope itemtype="http://schema.org/BlogPosting">
+<main class="content" role="main">
 
-  <header class="post__header">
-    <h1 class="post__title" itemprop="name headline">
-      {{ page.title }}
-    </h1>
+    <article class="post">
 
-    <div class="post__meta">
+        <header class="post-header", style="margin-bottom: 2em;">
+            <h1 class="post-title">{{ page.title }}</h1>
+            <section class="post-meta">
+                {% if page.categories.size > 0 %}
+                    {{ page.categories | array_to_sentence_string | prepend: 'on ' }}
+                {% endif %}
+                <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+            </section>
+        </header>
 
-      {% include meta.html %}
+<!--         <header class="post-header">
+            <a id="blog-logo" href="{{site.url}}">
+                {% if site.logo %}
+                    <img src="{{site.logo}}" alt="{{ site.name }}" />
+                {% else %}
+                    <span class="blog-title">{{ site.name }}</span>
+                {%endif%}
+            </a>
+        </header> -->
 
-      {% if page.tags.size > 0 %}
-      <ul class="meta-tags">
-        {% for tag in page.tags %}
-          <li class="meta-tags__item">
-            <a href="/tags/{{ tag }}">#{{ tag }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-    </div>
-  </header>
+        <!-- <span class="post-meta">
+            <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
+            {% if page.categories.size > 0 %}
+                {{ page.categories | array_to_sentence_string | prepend: 'on ' }}
+            {% endif %}
+        </span> -->
 
-  {% if page.image %}
-  <figure class="post__cover">
-    <img src="{{page.image | absolute_url }}" alt="{{page.title}}" itemprop="thumbnailUrl">
-  </figure>
-  {% endif %}
+        <!-- <h1 class="post-title">{{ page.title }}</h1> -->
 
-  <section class="post__content">
-    {{ content }}
-  </section>
+        <section class="post-content">
+            {{content}}
+        </section>
 
-  {% include post/social-links.html %}
-  {% include post/references.html %}
-</article>
+        {% if page.archive %}
+        <section class="archive">
+            <h5>Archive</h5>
+            <ul>
+                {% for post in site.posts %}
+                    <li><span>{{ post.date | date_to_string }}</span>  <a href="{{ post.url  | relative_url}}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </section>
+        {% endif %}
 
-{% include post/comments.html %}
+        <footer class="post-footer">
+            <!-- If we want to display author's name and bio -->
+            {% if site.author %}
+                <figure class="author-image">
+                    <a class="img" href="{{'/' | relative_url }}" style="background-image: url({{'/assets/images/profile.jpg' | relative_url}})">
+                    <span class="hidden">{{site.author}}'s Picture</span></a>
+                </figure>
+                <section class="author">
+                    <!-- Author Name -->
+                    <h4> {{ site.author }} </h4>
+                    <!-- Author Bio -->
+                    <p>
+                        Thanks for reading! If you found this article to be interesting, consider checking out my projects at <a href="https://github.com/mayant15/" target="_blank">GitHub</a>.
+                    </p>
+                </section>
+            {% endif %}
+
+            <!-- Share links section -->
+            {% include share.html %}
+
+        </footer>
+
+    </article>
+
+</main>

@@ -1,0 +1,37 @@
+---
+# Let's add a comment to make this file sass-y.
+# Change this file for any custom CSS.
+---
+
+/* We need to add display:inline in order to align the '>>' of the 'read more' link */
+.post-excerpt p {
+	display:inline;
+}
+
+.post__image {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2em;
+}
+
+.post__image i {
+	color: #3A414599;
+	font-size: 0.8em;
+	margin: auto;
+}
+
+.post__summary {
+	td {
+		padding: 1rem;
+	}
+
+	p {
+		margin-bottom: 1rem;
+		color: #3A414599;
+	}
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+	"syntax"
+;

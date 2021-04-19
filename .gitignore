@@ -1,8 +1,6 @@
 _site
 .DS_Store
+*.swp
 .sass-cache
-.jekyll-metadata/
-.jekyll-cache/
-package-lock.json
-*.log
-node_modules/
+.jekyll-cache
+

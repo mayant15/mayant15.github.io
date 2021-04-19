@@ -2,7 +2,7 @@
 layout: post
 title: Linear and Polynomial Least Square Approximations
 math: true
-tags: numerical-analysis
+category: Numerical Analysis
 description: >
    A very simple way to fit a polynomial to discrete data
 ---
@@ -76,7 +76,7 @@ Solving these linear equations gives us our required polynomial.
 
 We'll start by generating a random set of points to act as our data. Then we'll try to solve the normal equations to find a linear and a cubic polynomial.
 
-```python
+{% highlight python %}
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -92,9 +92,9 @@ y = np.random.normal(size=m)
 fig = plt.figure()
 ax = fig.add_subplot(111)
 ax.scatter(x, y)
-```
+{% endhighlight %}
 
-{% include post/image.html img="/assets/images/posts/least-squares-discrete/data.png" desc="The data that we'll work on." %}
+{% include image.html img="/assets/images/posts/least-squares-discrete/data.png" desc="The data that we'll work on." %}
 
 We now define some functions to make things easier later. `least_squares` calculates the solution of the normal equations using an inbuilt function from `numpy`. In a later article, we'll look at some methods to solve these equations ourselves. `poly` calculates the value of the polynomial that we found on a set of values of $$x$$.
 
@@ -143,7 +143,7 @@ ax.plot(plot_x, plot_y3, color='green')
 fig
 ```
 
-{% include post/image.html img="/assets/images/posts/least-squares-discrete/fit.png" desc="The resultant linear and the cubic approximations of our data." %}
+{% include image.html img="/assets/images/posts/least-squares-discrete/fit.png" desc="The resultant linear and the cubic approximations of our data." %}
 
 On the graph above are the linear and cubic approximations of our data calculated by minimizing an error function. We defined this error function as the sum of the square of the error at each given datapoint. We then minimized this error by simply equating its derivatives to zero. That gave us some linear equations that we solved to get our parameters.
 

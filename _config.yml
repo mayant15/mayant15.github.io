@@ -1,123 +1,17 @@
-# Metadata
-title:          Mayant Mukul
-logo:           /assets/icons/favicon-192x192.png
-image:          /assets/images/me.jpg
-url:            https://mayantmukul.me
-repository:     mayant15/mayant15.github.io
-lang: en_GB
+name: Blog
+description: My thoughts on math and programming
+meta_description: "Mayant Mukul's blog on math and programming"
 
-# Travis
-safe: false
-lsi: false
-
-relative_source: ../mayant15.github.io/
-destination: ../blog-out/
-
-# Settings for deploy rake task
-username: mayant15
-repo: mayant15.github.io
-branch: develop
-email: mayantmukul@hotmail.com
-
-# Author Information
-author:
-  name:         Mayant Mukul
-  first_name:   Mayant
-  last_name:    Mukul
-  email:        mayantmukul@gmail.com
-  location:     New Delhi
-  github:       mayant15
-
-navigation:
-  - text: Home
-    url: /
-    active: false
-  - text: Articles
-    url: /articles
-    active: articles
-  - text: About
-    url: /about
-    active: about
-  - text: Search
-    url: /search
-    active: search
-
-footer:
-  - text: Archive
-    url: /archive
-  - text: Sitemap
-    url: /sitemap.xml
-
-social:
-  name:         Mayant Mukul
-  links:
-    - https://github.com/mayant15
-    - https://www.linkedin.com/in/mayant-mukul-222086172/
-    - mailto:mayantmukul@gmail.com
-  linkedin: https://www.linkedin.com/in/mayant-mukul-222086172/
-  github: https://github.com/mayant15
-  email: mailto:mayantmukul@gmail.com
-
-# Paths
+markdown: kramdown
+highlighter: rouge
+logo: false
+paginate: 15
 baseurl: ""
-asset_path:     "assets"
+domain_name: "https://mayant15.github.io"
+plugins: [
+  jekyll-paginate
+]
 
-# Conversion
-markdown:       kramdown
-kramdown:
-  input:        GFM
-  parse_block_html: true
-
-sass:
-  sass_dir:     _sass
-  sourcemap:    always
-  line_comments: true
-
-# Collections
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-
-# Output
-future:         false
-show_drafts:    false
-
-# Pagination
-pagination:
-  enabled: true
-  collection: 'posts'
-  per_page: 10
-  sort_reverse: true
-  title: ':title'
-
-# Plugins
-plugins:
-  - jekyll-paginate-v2
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-# Reading
-exclude:
-  - .jekyll-cache
-  - Gemfile
-  - Gemfile.lock
-  - vendor
-  - README.md
-  - Rakefile
-  - "*.Rmd"
-  - .travis.yml
-
-compress_html:
-  clippings: all
-  comments: ["<!--[if ", "<![endif]-->"]
-  endings: all
-  startings: [body]
-  profile: false
-  blanklines: false
+# Details for the RSS feed generator
+url: ""
+author: "Mayant Mukul"
