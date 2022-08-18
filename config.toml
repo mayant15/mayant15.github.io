@@ -1,0 +1,32 @@
+baseURL = 'https://mayantmukul.com/'
+languageCode = 'en-in'
+title = 'Mayant Mukul'
+theme = 'archie'
+
+# Theme params
+
+[params]
+mode = 'auto'
+useCDN = false
+subtitle = 'My thoughts on programming and math'
+
+[[params.social]]
+name = 'GitHub'
+icon = 'github'
+url = 'https://github.com/mayant15'
+
+[[menu.main]]
+name = 'Home'
+url = '/'
+weight = 1
+
+[[menu.main]]
+name = 'Posts'
+url = '/posts'
+weight = 2
+
+[[menu.main]]
+name = 'About'
+url = '/about'
+weight = 3
+
