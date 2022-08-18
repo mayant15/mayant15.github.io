@@ -7,7 +7,7 @@ math: true
 # categories: Topology
 ---
 
-This article continues the concepts introduced in the one on [quotient spaces](https://mayantmukul.me/2020/05/18/quotient-spaces.html). Here I will use group actions and their properties to create quotients of a square.
+This article continues the concepts introduced in the one on [quotient spaces](/posts/quotient-sets-and-topologies/). Here I will use group actions and their properties to create quotients of a square.
 
 ## Definitions
 
