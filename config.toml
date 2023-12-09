@@ -8,7 +8,7 @@ theme = 'archie'
 [params]
 mode = 'auto'
 useCDN = false
-subtitle = 'My thoughts on programming and math'
+katex = true
 
 [[params.social]]
 name = 'GitHub'
