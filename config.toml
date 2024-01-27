@@ -6,27 +6,33 @@ theme = 'archie'
 # Theme params
 
 [params]
-mode = 'auto'
+mode = 'light'
 useCDN = false
 katex = true
+# subtitle = 'Tinkering with stuff'
 
 [[params.social]]
 name = 'GitHub'
 icon = 'github'
 url = 'https://github.com/mayant15'
 
-[[menu.main]]
-name = 'Home'
-url = '/'
-weight = 1
+[[params.social]]
+name = 'LinkedIn'
+icon = 'linkedin'
+url = 'https://www.linkedin.com/in/mayant-mukul-222086172/'
+
+# [[menu.main]]
+# name = 'Home'
+# url = '/'
+# weight = 1
 
 [[menu.main]]
 name = 'Posts'
 url = '/posts'
-weight = 2
+weight = 1
 
 [[menu.main]]
 name = 'About'
 url = '/about'
-weight = 3
+weight = 2
 
