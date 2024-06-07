@@ -3,7 +3,7 @@ date: 2024-05-20T19:52:35-07:00
 title: "Graveyard"
 description: "A small list of recent projects I abandoned"
 math: true
-draft: false
+draft: true
 ---
 
 Here's a small list of recent projects that I abandoned over the last 8 months because they either didn't work out as expected or I just lost interest.

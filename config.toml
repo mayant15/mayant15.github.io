@@ -9,7 +9,7 @@ theme = 'archie'
 mode = 'light'
 useCDN = false
 katex = true
-# subtitle = 'Tinkering with stuff'
+subtitle = 'Masters student at [UBC Software Practices Lab](https://spl.cs.ubc.ca/index.html) supervised by [Caroline Lemieux](https://www.carolemieux.com/). Currently working on fuzz testing.'
 
 [[params.social]]
 name = 'GitHub'
@@ -21,18 +21,13 @@ name = 'LinkedIn'
 icon = 'linkedin'
 url = 'https://www.linkedin.com/in/mayant-mukul-222086172/'
 
+[[params.social]]
+name = 'Email'
+icon = 'mail'
+url = 'mailto:mayantm@cs.ubc.ca'
+
 # [[menu.main]]
-# name = 'Home'
-# url = '/'
+# name = 'Posts'
+# url = '/posts'
 # weight = 1
-
-[[menu.main]]
-name = 'Posts'
-url = '/posts'
-weight = 1
-
-[[menu.main]]
-name = 'About'
-url = '/about'
-weight = 2
 
