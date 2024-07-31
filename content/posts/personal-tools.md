@@ -1,7 +1,7 @@
 ---
 date: 2024-07-13T11:36:13-07:00
 title: "Building personal tools"
-description: "And developing habits"
+description: "Developing habits with small scripts and plaintext"
 math: false
 draft: false
 ---
@@ -29,7 +29,7 @@ and I have to say I agree.
 Organizing notes and tasks is another thing I really really struggle with. After trying Notion and Obsidian, I realized I cannot type characters into things that are not Neovim. Inspired by Obsidian's idea
 of plaintext notes with markup, I set out to create my own system of Markdown-based notes and tasks, along with shell scripts with regexes that search and filter views. But the thing is, actually *writing*
 notes is the hard part, and I slowly started to optimize my scripts for [capturing instead of retrieval](https://news.ycombinator.com/item?id=40951157). At this point I also found [Neorg](https://github.com/nvim-neorg/neorg/), which I now love
-for its range of quality-of-life features when working in Neovim. Plaintext markup and small, specific scripts have helped my tune my systems to exactly what I want.
+for its range of quality-of-life features when working in Neovim. Plaintext markup and small, specific scripts have helped me tune my systems to exactly what I want.
 
 There still are things that I'm not quite happy with, but simple scripts that glue together programs operating on text fit most of my needs.
 
