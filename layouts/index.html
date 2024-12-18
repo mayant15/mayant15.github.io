@@ -6,24 +6,36 @@
 			{{ partial "head.html" . }}
 
 			<main class="list">
-				<div class="site-description">
-					{{- if isset .Site.Params "subtitle" -}}
-					<p>{{ .Site.Params.Subtitle | markdownify }}</p>
-					{{- end -}}
-				</div>
-        <div style="display:flex">
-          {{- range $index, $key := .Site.Params.Social -}}
-          <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
-          <!-- <a class="border"></a> -->
-          {{- end -}}
+        <div style="display: flex; flex-grow: 1">
+          <div style="max-width: 70%; margin-right: 2em;">
+            <div class="site-description" style="flex-direction: column;">
+              {{- if isset .Site.Params "subtitle" -}}
+              <p>{{ .Site.Params.Subtitle | markdownify }}</p>
+              {{- end -}}
+            </div>
+            <div style="display:flex">
+              {{- range $index, $key := .Site.Params.Social -}}
+              <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
+              {{- end -}}
+            </div>
+            <p style="margin-top: 2em; margin-bottom: 0;">
+            {{ .Site.Params.Blurb | markdownify }}
+            </p>
+          </div>
+          <div>
+            <img src="/images/me.jpeg" width=300 />
+          </div>
         </div>
+
+
+        <h1>Posts</h1>
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages }}
 				<section class="list-item">
-					<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
+          <p class="title"><b>-</b> <a href="{{ .RelPermalink }}">{{.Title}}</a>
 					<time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
-					{{ template "partials/pagedescription.html" . }}
+          </p>
 				</section>
 				{{ end }}
 				{{ template "partials/paginator.html" . }}

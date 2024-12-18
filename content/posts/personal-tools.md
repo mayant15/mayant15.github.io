@@ -10,7 +10,7 @@ I first used Vim 7 years ago and gave up. Configuring everything with Vimscript 
 to get things *just right*. It was a "skill issue", but configuring an editor is not a skill that I wanted to develop, however fun that is. I wanted something that worked out of the box. I tried Vim
 distributions, and they were even worse, pretending to be a faint echo of what a proper IDE could be. I used Atom when it was alive and then JetBrains IDEs, but for some reason I still kept
 coming back to Vim. 3 years ago I switched exclusively to Neovim and haven't looked back since. Built-in LSP support and configuring with Lua was the reason why I could start to understand how my tooling 
-actually worked. Being able to start from an empty `init.lua` and slowly mold the editor into what I want was *liberating* (shoutout to [ThePrimeagen](https://www.youtube.com/watch?v=w7i4amO_zaE)).
+actually worked. Being able to start from an empty `init.lua` and slowly mould the editor into what I want was *liberating* (shoutout to [ThePrimeagen](https://www.youtube.com/watch?v=w7i4amO_zaE)).
 
 There is something to be said about understanding your tools and the fulfillment that comes from building them yourself. It definitely becomes the easiest excuse for me to procrastinate working on things
 I should be doing. But at the same time using something I built myself everyday makes me happy, so why not? There is a line here though. I am not going to build my own editor. Build things that fix small

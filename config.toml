@@ -9,7 +9,11 @@ theme = 'archie'
 mode = 'light'
 useCDN = false
 katex = true
-subtitle = 'Masters student at [UBC Software Practices Lab](https://spl.cs.ubc.ca/index.html) supervised by [Caroline Lemieux](https://www.carolemieux.com/). Currently working on fuzz testing.'
+subtitle = 'PhD student at [UBC Software Practices Lab](https://spl.cs.ubc.ca/index.html) supervised by [Caroline Lemieux](https://www.carolemieux.com/). Currently working on fuzz testing.'
+blurb ="""I am broadly interested in practical solutions to make software simpler, safer, and
+faster. Specifically, I am working on automated testing and program analysis. My current work
+focuses on expanding the applicability of fuzz testing to JavaScript libraries in a way that
+addresses the many quirks of dynamic languages."""
 
 [[params.social]]
 name = 'GitHub'
