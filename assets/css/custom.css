@@ -1,0 +1,14 @@
+li {
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.5;
+}
+
+ul > li::before {
+  content: '- ';
+  font-weight: bold;
+}
+
+ul.works-list li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

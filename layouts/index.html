@@ -27,12 +27,23 @@
           </div>
         </div>
 
+        <h1>Works</h1>
+        <div>
+          <ul class="works-list">
+            <li>
+              Mayant Mukul. <a href="/docs/ICSE_SRC_2025.pdf">Automatic Fuzz Drivers for JavaScript with Type Distributions</a>. 2025. <em>ACM SRC Extended Abstract</em>.
+            </li>
+            <li>
+              Sagnik Dey, Mayant Mukul, Parth Sharma, Swarnendu Biswas. <a href="https://arxiv.org/abs/2111.12478">Predictive Data Race Detection for GPUs</a>. 2021. <em>arXiv</em>.
+            </li>
+          </ul>
+        </div>
 
         <h1>Posts</h1>
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages }}
-				<section class="list-item">
+				<section>
           <p class="title"><b>-</b> <a href="{{ .RelPermalink }}">{{.Title}}</a>
 					<time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
           </p>
