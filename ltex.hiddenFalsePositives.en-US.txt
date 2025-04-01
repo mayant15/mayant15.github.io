@@ -1,6 +1,0 @@
-{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QI used Atom when it was alive and JetBrains IDEs on their student subscriptions, but I still kept coming back to Vim.\\E$"}
-{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QI used Atom when it was alive and then JetBrains IDEs, but I still kept coming back to Vim.\\E$"}
-{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QI used Atom when it was alive and then JetBrains IDEs, but for some reason I still kept coming back to Vim.\\E$"}
-{"rule":"DT_PRP","sentence":"^\\QI still cannot stop doomscrolling X (the everything app™) and I do not want another website to do that.\\E$"}
-{"rule":"QUESTION_MARK","sentence":"^\\QWhat did stick was a simple script that dumps three random URLs into my terminal.\\E$"}
-{"rule":"ENGLISH_WORD_REPEAT_RULE","sentence":"^\\QOrganizing notes and tasks is another thing I really really struggle with.\\E$"}
