@@ -68,9 +68,6 @@ So I started encoding part of JS type coercion semantics in Z3 with [Viper](http
 sorts of issues, generating SMT constraints that were very, very hard to solve for most practical
 programs.
 
-But this principle of "varying input types as well as values" led me to my current work – fuzzing
-libraries without function signatures.
-
 ## Testing schedulers
 
 Different work scheduling algorithms have different guarantees. I wanted to build something to
