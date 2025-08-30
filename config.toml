@@ -1,5 +1,5 @@
-baseURL = 'https://mayantmukul.com/'
-languageCode = 'en-in'
+baseURL = 'https://mayantm.com/'
+languageCode = 'en-ca'
 title = 'Mayant Mukul'
 theme = 'archie'
 
@@ -29,10 +29,4 @@ url = 'https://www.linkedin.com/in/mayant-mukul-222086172/'
 [[params.social]]
 name = 'Email'
 icon = 'mail'
-url = 'mailto:mayantm@cs.ubc.ca'
-
-# [[menu.main]]
-# name = 'Posts'
-# url = '/posts'
-# weight = 1
-
+url = 'mailto:mayant.mukul@ubc.ca'

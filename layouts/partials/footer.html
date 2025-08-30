@@ -1,8 +1,17 @@
 <footer>
   <div style="display:flex">
-    {{- range $index, $key := .Site.Params.Social -}}
-    <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
+    <!-- RSS -->
+    <a class="soc" href="{{ .Site.BaseURL }}index.xml">
+      <i data-feather="rss"></i>
+    </a>
     <a class="border"></a>
+
+    <!-- Socials -->
+    {{- range $index, $key := .Site.Params.Social -}}
+      <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}">
+        <i data-feather="{{ $key.icon }}"></i>
+      </a>
+      <a class="border"></a>
     {{- end -}}
   </div>
   <div class="footer-info">
