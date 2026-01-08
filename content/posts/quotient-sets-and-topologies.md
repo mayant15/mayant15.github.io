@@ -38,7 +38,7 @@ This deformation of one space into another by assuming some points to be equival
 
 Another classic example is the construction of a torus. Think about how you will create a torus from a sheet of paper. One way to do it would be to join opposite edges into a tube and then roll the tube again to join its ends. In other words, we're *identifying* opposite edges as being the same.
 
-{{< figure src="/images/posts/quotient-spaces/torus-from-rectangle.gif" caption="Rolling a sheet of paper to create a torus." >}}
+{{< figure src="/images/posts/quotient-spaces/torus-from-rectangle.gif" caption="Rolling a sheet of paper to create a torus. [Source](https://en.wikipedia.org/wiki/Torus#/media/File:Torus_from_rectangle.gif)." >}}
 
 Now think about the joining process for a minute. We can only join points that are in the same equivalence class. So points directly opposite to each other on opposite edges have to be in the same class. All four corners are combined to a single point, so they should be in a separate class of their own. Finally, points on the interior of this sheet are not joined to anything at all, so they should all represent unique singleton classes. Partitioning a sheet of paper in this way and taking its quotient gives us a torus.
 
