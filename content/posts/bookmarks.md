@@ -6,6 +6,7 @@ math: false
 draft: false
 ---
 
+- [A Silent Girl From A Wailing Sea](https://www.reddit.com/r/creepcast/comments/1pfz797/a_silent_girl_from_a_wailing_sea/)
 - [I found the bunker of a prepper family who went missing three years ago](https://www.reddit.com/r/nosleep/comments/11txaos/i_found_the_bunker_of_a_prepper_family_who_went/)
 - [Giving University Exams in the Age of Chatbots](https://ploum.net/2026-01-19-exam-with-chatbots.html)
 - [The Journal of an Unknown Soldier, U.S. Navajo War, 1863](https://www.reddit.com/r/creepcast/comments/1n4y3ho/the_journal_of_an_unknown_soldier_us_navajo_war/)
