@@ -1,0 +1,15 @@
+<!-- Pre-render math expressions with Hugo's built-in Katex support. -->
+
+<!-- Custom latex macros -->
+{{- $macros := dict
+    "\\vt"   "\\mathbf{#1}^\\top"
+    "\\prob" "\\textrm{Pr} \\left[ #1 \\right]"
+-}}
+
+{{- $opts := dict
+    "output"      "htmlAndMathml"
+    "displayMode" (eq .Type "block")
+    "macros"      $macros
+-}}
+
+{{- transform.ToMath .Inner $opts -}}

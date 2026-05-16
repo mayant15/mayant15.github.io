@@ -7,8 +7,6 @@ theme = 'archie'
 
 [params]
 mode = 'light'
-useCDN = false
-katex = true
 subtitle = 'PhD student at [UBC Software Practices Lab](https://spl.cs.ubc.ca/index.html) supervised by [Caroline Lemieux](https://www.carolemieux.com/). Currently working on fuzz testing.'
 blurb ="""I am broadly interested in practical solutions to make software simpler, safer, and
 faster. Specifically, I am working on automated testing and program analysis. My current work
@@ -30,3 +28,12 @@ url = 'https://www.linkedin.com/in/mayant-mukul-222086172/'
 name = 'Email'
 icon = 'mail'
 url = 'mailto:mayant.mukul@ubc.ca'
+
+# Goldmark passthrough lets math expressions through, then a render hook
+# renders them later.
+[markup.goldmark.extensions.passthrough]
+enable = true
+
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\\[', '\\]'], ['$$', '$$']]
+inline = [['\\(', '\\)'], ['$', '$']]
