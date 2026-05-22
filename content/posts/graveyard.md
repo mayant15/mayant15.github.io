@@ -6,7 +6,9 @@ math: true
 draft: false
 ---
 
-Here's a small list of recent projects that I abandoned over the last 8 months because they either didn't work out as expected or I just lost interest.
+Here's a list of projects that I tried to some degree then abandoned. They either didn't work out as expected
+or I just moved on to other things. It's a growling list -- about once an year I come back here and
+append some more ideas.
 
 ## Sampling fuzzer
 
@@ -79,3 +81,32 @@ since Linux's EEVDF tries to schedule smaller tasks early.
 Evaluation found that the genetic search doesn't work any better than random here. Looking
 more into different fitness functions might help. In principle, you could also use this to compare
 and find workloads that respond very differently in two different schedulers.
+
+# Update
+
+22nd May 2026
+
+## Fuzzing JVM's JIT options
+
+[JOpFuzzer](https://ieeexplore.ieee.org/abstract/document/10172514) finds JIT bugs under different configuration
+options. To do so, it learns correlations between code features and configuration options using a
+JVM's test suite. I don't think it is obvious that such a step is necessary. I would've liked
+to see a comparison with more "hard-coded" heuristics: we know `LoopMaxUnroll` is correlated with
+the presence of loops. Does the learning process give us weights that are better that our
+naive guesses?
+
+I AI-generated a version of these heuristics [here](https://github.com/mayant15/JOpFuzzer), but
+haven't evaluated it or fully reviewed the code. There's some evaluation scripts there as well that
+might be useful.
+
+## Corpus resampling
+
+If we visualize byte strings from a saturated corpus as points in $\mathbb{Z}^n$, do they form
+clusters? If so, is it possible to improve coverage by sampling the negative space? A point in
+space can be missing for two reasons: a mutation hasn't hit it yet, or the fuzzer deemed the input
+uninteresting via feedback. This is especially true for inputs that require multiple mutations to
+reveal interesting behaviour.
+
+I tried some 2D projection [here](https://github.com/mayant15/corpus-clustering/) for a 24-hour libpng run and there
+definitely seem to be some clusters (I would be very surprised if the corpus was completely uniform),
+but didn't get much further than that.
